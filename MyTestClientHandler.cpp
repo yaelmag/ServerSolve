@@ -14,16 +14,10 @@ void MyTestClientHandler::handleClient(int cliSocket) {
         problem = server_side::TcpServer::readLine(cliSocket);
         if (cache->findSolution(&problem)) {
             solution = cache->getSolution(&problem);
-            //todo
-            //לכתוב בחזרה למשתמש את הפיתרון
         } else {
-            std::string copyProblem = problem;
-            std::reverse(copyProblem.begin(), copyProblem.end());
-            solution = copyProblem;
+            solution = this->solver->solve(problem);
             cache->storeSolution(&problem, &solution);
-            //todo
-            // לאחסן גם במפה שתעודכן בסוף בקובץ
-            //לכתוב בחזרה למשתמש את הפיתרון
         }
     }
+    // write to client.
 }

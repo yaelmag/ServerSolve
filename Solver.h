@@ -7,9 +7,10 @@
 
 #include <string>
 
+template <class Problem, class Solution>
 class Solver {
 public:
-    virtual std::string solve(std::string problem) = 0;
+    virtual Solution solve(Problem problem) = 0;
 };
 
 

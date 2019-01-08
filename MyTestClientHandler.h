@@ -10,9 +10,13 @@
 #include "CacheManager.h"
 
 class MyTestClientHandler : public ClientHandler {
-    Solver* solver;
+    Solver<std::string, std::string>* solver;
     CacheManager<std::string, std::string> *cache;
 public:
+    MyTestClientHandler(Solver<std::string, std::string>* solver, CacheManager<std::string, std::string> *cache)
+    : solver(solver) {
+        this->cache = cache;
+    }
     void handleClient(int cliSocket) override;
 };
 

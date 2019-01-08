@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project2.dir/CacheManager.cpp.o"
   "CMakeFiles/project2.dir/FileCacheManager.cpp.o"
   "CMakeFiles/project2.dir/TcpServer.cpp.o"
+  "CMakeFiles/project2.dir/ReverserSolver.cpp.o"
   "project2.pdb"
   "project2"
 )
