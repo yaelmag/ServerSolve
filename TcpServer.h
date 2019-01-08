@@ -22,6 +22,7 @@ namespace server_side {
         static int acceptConnection(int socketId);
         static void closeSocket(int socketId);
         static std::string readLine(int cliSock);
+        static void writeToClient(int cliSock, std::string message);
     };
 }
 

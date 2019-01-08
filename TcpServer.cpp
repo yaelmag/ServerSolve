@@ -79,4 +79,12 @@ namespace server_side {
         }
         return msg;
     }
+
+    void server_side::TcpServer::writeToClient(int cliSock, std::string message) {
+        /* Send message to the client */
+        if (send(cliSock, message.c_str(), strlen(message.c_str()), 0) < 0) {
+            perror("send failed: ");
+            exit(1);
+        }
+    }
 }
