@@ -114,9 +114,6 @@
 		<Unit filename="/home/adi/CLionProjects/project2/Server.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/Solver.cpp">
-			<Option target="project2"/>
-		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/Solver.h">
 			<Option target="project2"/>
 		</Unit>

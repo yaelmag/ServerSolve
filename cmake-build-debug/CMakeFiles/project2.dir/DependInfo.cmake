@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/adi/CLionProjects/project2/FileCacheManager.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/FileCacheManager.cpp.o"
   "/home/adi/CLionProjects/project2/MySerialServer.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MySerialServer.cpp.o"
   "/home/adi/CLionProjects/project2/MyTestClientHandler.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MyTestClientHandler.cpp.o"
-  "/home/adi/CLionProjects/project2/Solver.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/Solver.cpp.o"
   "/home/adi/CLionProjects/project2/TcpServer.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/TcpServer.cpp.o"
   "/home/adi/CLionProjects/project2/main.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/main.cpp.o"
   )

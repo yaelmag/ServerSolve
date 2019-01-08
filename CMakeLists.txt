@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.12.3)
 project(project2)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS -pthread)
 
 add_executable(project2 main.cpp Server.h MySerialServer.cpp MySerialServer.h
-        ClientHandler.h MyTestClientHandler.cpp MyTestClientHandler.h Solver.cpp
+        ClientHandler.h MyTestClientHandler.cpp MyTestClientHandler.h
         Solver.h CacheManager.cpp CacheManager.h FileCacheManager.cpp FileCacheManager.h TcpServer.cpp TcpServer.h)

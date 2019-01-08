@@ -60,24 +60,23 @@ namespace server_side {
         close(socketId);
     }
 
-    std::string server_side::TcpServer::readData(int cliSock) {
+    std::string server_side::TcpServer::readLine(int cliSock) {
         char buffer[BUFFER_SIZE], c;
         std::string msg;
         int n;
-        while (true) {
-            msg = "";
-            // If connection is established then start communicating *//*
-            bzero(buffer, (BUFFER_SIZE));
-            n = read(cliSock, &c, 1);
-            // n = read(cliSock, buffer, (BUFFER_SIZE - 1));
-            while (c != '\n') {
-                if (n < 0) {
-                    perror("ERROR reading from socket");
-                    exit(1);
-                }
-                msg += c;
-                n = read(cliSock, &c, 1);
+        msg = "";
+        // If connection is established then start communicating *//*
+        bzero(buffer, (BUFFER_SIZE));
+        n = read(cliSock, &c, 1);
+        // n = read(cliSock, buffer, (BUFFER_SIZE - 1));
+        while (c != '\n') {
+            if (n < 0) {
+                perror("ERROR reading from socket");
+                exit(1);
             }
+            msg += c;
+            n = read(cliSock, &c, 1);
         }
+        return msg;
     }
 }

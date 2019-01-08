@@ -8,7 +8,7 @@
 
 class ClientHandler {
 public:
-    void handleClient(int idSocket);
+    virtual void handleClient(int cliSocket) = 0;
 };
 
 

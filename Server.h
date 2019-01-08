@@ -13,7 +13,7 @@ namespace server_side {
     public:
         virtual void open(int port, ClientHandler* c) = 0;
         virtual void stop() = 0;
-        virtual void start(int socketId, ClientHandler* c) = 0;
+        static void start(int socketId, ClientHandler* c);
     };
 }
 

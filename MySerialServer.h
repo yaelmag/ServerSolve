@@ -10,12 +10,12 @@
 namespace server_side {
 
     class MySerialServer : public Server {
-        bool stopRunning;
+        static bool stopRunning;
     public:
         MySerialServer();
         void open(int port, ClientHandler* c) override;
         void stop() override;
-        void start(int socketId, ClientHandler* c) override;
+        static void start(int socketId, ClientHandler* c);
     };
 
 }

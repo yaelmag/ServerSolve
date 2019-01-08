@@ -9,7 +9,7 @@ bool FileCacheManager::findSolution(Problem* problem) {
     return false;
 }
 
-const Solution &FileCacheManager::getSolution() {
+const Solution &FileCacheManager::getSolution(Problem* problem) {
     //return <#initializer#>;
 }
 
@@ -18,7 +18,7 @@ void FileCacheManager::storeSolution(Problem* problem, Solution* solution) {
 }
 
 void FileCacheManager::writeToFile(std::string fileName) {
-    for (auto problem: cache) {
+    /*for (auto problem: cache) {
 
-    }
+    }*/
 }

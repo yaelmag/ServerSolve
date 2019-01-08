@@ -21,7 +21,7 @@ namespace server_side {
         static int openSocket(int port);
         static int acceptConnection(int socketId);
         static void closeSocket(int socketId);
-        static std::string readData(int cliSock);
+        static std::string readLine(int cliSock);
     };
 }
 

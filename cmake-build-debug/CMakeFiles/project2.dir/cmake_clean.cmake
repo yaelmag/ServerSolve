@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/project2.dir/main.cpp.o"
   "CMakeFiles/project2.dir/MySerialServer.cpp.o"
   "CMakeFiles/project2.dir/MyTestClientHandler.cpp.o"
-  "CMakeFiles/project2.dir/Solver.cpp.o"
   "CMakeFiles/project2.dir/CacheManager.cpp.o"
   "CMakeFiles/project2.dir/FileCacheManager.cpp.o"
   "CMakeFiles/project2.dir/TcpServer.cpp.o"

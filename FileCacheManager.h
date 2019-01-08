@@ -14,9 +14,9 @@ class FileCacheManager : public CacheManager<class Problem, class Solution>{
 public:
     bool findSolution(Problem* problem) override;
 
-    const Solution &getSolution() override;
+    const Solution &getSolution(Problem* problem) override;
 
-    void storeSolution(Problem* problem, Solution* solution) override;
+    void storeSolution(Problem* problem, Solution* solution);
 
     void writeToFile(std::string fileName);
 };
