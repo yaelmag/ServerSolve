@@ -8,128 +8,164 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/yael/CLionProjects/project2/cmake-build-debug"/>
+				<Option working_dir="/home/adi/CLionProjects/project2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/yael/CLionProjects/project2/cmake-build-debug"/>
+				<Option working_dir="/home/adi/CLionProjects/project2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="project2">
-				<Option output="/home/yael/CLionProjects/project2/cmake-build-debug/project2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yael/CLionProjects/project2/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 project2"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="project2/fast">
-				<Option output="/home/yael/CLionProjects/project2/cmake-build-debug/project2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yael/CLionProjects/project2/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 project2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/yael/CLionProjects/project2/cmake-build-debug"/>
+				<Option working_dir="/home/adi/CLionProjects/project2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yael/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project2">
+				<Option output="/home/adi/CLionProjects/project2/cmake-build-debug/project2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adi/CLionProjects/project2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 project2"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project2/fast">
+				<Option output="/home/adi/CLionProjects/project2/cmake-build-debug/project2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adi/CLionProjects/project2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 project2/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/adi/CLionProjects/project2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/yael/CLionProjects/project2/CacheManager.h">
+		<Unit filename="/home/adi/CLionProjects/project2/Astar.cpp">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/ClientHandler.h">
+		<Unit filename="/home/adi/CLionProjects/project2/Astar.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/FileCacheManager.cpp">
+		<Unit filename="/home/adi/CLionProjects/project2/BFS.cpp">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/FileCacheManager.h">
+		<Unit filename="/home/adi/CLionProjects/project2/BFS.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/MySerialServer.cpp">
+		<Unit filename="/home/adi/CLionProjects/project2/BestFirstSearch.cpp">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/MySerialServer.h">
+		<Unit filename="/home/adi/CLionProjects/project2/BestFirstSearch.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/MyTestClientHandler.cpp">
+		<Unit filename="/home/adi/CLionProjects/project2/CacheManager.cpp">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/MyTestClientHandler.h">
+		<Unit filename="/home/adi/CLionProjects/project2/CacheManager.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/ReverserSolver.cpp">
+		<Unit filename="/home/adi/CLionProjects/project2/ClientHandler.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/ReverserSolver.h">
+		<Unit filename="/home/adi/CLionProjects/project2/DFS.cpp">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/Server.h">
+		<Unit filename="/home/adi/CLionProjects/project2/DFS.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/Solver.h">
+		<Unit filename="/home/adi/CLionProjects/project2/FileCacheManager.cpp">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/TcpServer.cpp">
+		<Unit filename="/home/adi/CLionProjects/project2/FileCacheManager.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/TcpServer.h">
+		<Unit filename="/home/adi/CLionProjects/project2/HillClimbing.cpp">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/main.cpp">
+		<Unit filename="/home/adi/CLionProjects/project2/HillClimbing.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/CMakeLists.txt">
+		<Unit filename="/home/adi/CLionProjects/project2/MySerialServer.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/MySerialServer.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/MyTestClientHandler.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/MyTestClientHandler.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/ReverserSolver.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/ReverserSolver.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/Searcher.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/Server.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/Solver.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/TcpServer.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/TcpServer.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/main.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

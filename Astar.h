@@ -5,8 +5,9 @@
 #ifndef PROJECT2_ASTAR_H
 #define PROJECT2_ASTAR_H
 
+#include "Searcher.h"
 
-class Astar {
+class Astar : public Searcher{
 
 };
 

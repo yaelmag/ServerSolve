@@ -5,8 +5,9 @@
 #ifndef PROJECT2_BESTFIRSTSEARCH_H
 #define PROJECT2_BESTFIRSTSEARCH_H
 
+#include "Searcher.h"
 
-class BestFirstSearch {
+class BestFirstSearch : public Searcher{
 
 };
 

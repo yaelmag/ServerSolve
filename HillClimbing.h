@@ -5,8 +5,9 @@
 #ifndef PROJECT2_HILLCLIMBING_H
 #define PROJECT2_HILLCLIMBING_H
 
+#include "Searcher.h"
 
-class HillClimbing {
+class HillClimbing : public Searcher{
 
 };
 

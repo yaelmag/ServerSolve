@@ -4,12 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yael/CLionProjects/project2/FileCacheManager.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/FileCacheManager.cpp.o"
-  "/home/yael/CLionProjects/project2/MySerialServer.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MySerialServer.cpp.o"
-  "/home/yael/CLionProjects/project2/MyTestClientHandler.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MyTestClientHandler.cpp.o"
-  "/home/yael/CLionProjects/project2/ReverserSolver.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/ReverserSolver.cpp.o"
-  "/home/yael/CLionProjects/project2/TcpServer.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/TcpServer.cpp.o"
-  "/home/yael/CLionProjects/project2/main.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/main.cpp.o"
+  "/home/adi/CLionProjects/project2/Astar.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/Astar.cpp.o"
+  "/home/adi/CLionProjects/project2/BFS.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/BFS.cpp.o"
+  "/home/adi/CLionProjects/project2/BestFirstSearch.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/BestFirstSearch.cpp.o"
+  "/home/adi/CLionProjects/project2/CacheManager.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/CacheManager.cpp.o"
+  "/home/adi/CLionProjects/project2/DFS.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/DFS.cpp.o"
+  "/home/adi/CLionProjects/project2/FileCacheManager.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/FileCacheManager.cpp.o"
+  "/home/adi/CLionProjects/project2/HillClimbing.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/HillClimbing.cpp.o"
+  "/home/adi/CLionProjects/project2/MySerialServer.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MySerialServer.cpp.o"
+  "/home/adi/CLionProjects/project2/MyTestClientHandler.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MyTestClientHandler.cpp.o"
+  "/home/adi/CLionProjects/project2/ReverserSolver.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/ReverserSolver.cpp.o"
+  "/home/adi/CLionProjects/project2/TcpServer.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/TcpServer.cpp.o"
+  "/home/adi/CLionProjects/project2/main.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -5,8 +5,9 @@
 #ifndef PROJECT2_BFS_H
 #define PROJECT2_BFS_H
 
+#include "Searcher.h"
 
-class BFS {
+class BFS : public Searcher{
 
 };
 
