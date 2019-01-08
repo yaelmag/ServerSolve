@@ -8,14 +8,13 @@
 #include <string>
 
 
-template<class Problem, class Solution>
 class CacheManager {
 public:
-    virtual bool findSolution(Problem* problem) = 0;
+    virtual bool findSolution(std::string problem) = 0;
 
-    virtual const Solution& getSolution(Problem* problem) = 0;
+    virtual std::string getSolution(std::string problem) = 0;
 
-    virtual void storeSolution(Problem* problem, Solution* solution) = 0;
+    virtual void storeSolution(std::string problem, std::string solution) = 0;
 };
 
 

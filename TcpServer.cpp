@@ -34,7 +34,6 @@ namespace server_side {
         /* Now start listening for the clients, here process will
            * go in sleep mode and will wait for the incoming connection
         */
-
         listen(serverSockfd, 5);
         return serverSockfd;
     }
@@ -48,11 +47,12 @@ namespace server_side {
         struct timeval tv;
         // Timeout in seconds
         tv.tv_sec = 30;
+        std::cout<<"before 30"<<std::endl;
         setsockopt(socketId, SOL_SOCKET, SO_SNDTIMEO,&tv,sizeof(struct timeval));
         setsockopt(socketId, SOL_SOCKET, SO_RCVTIMEO,&tv,sizeof(struct timeval));
-
         /* Accept actual connection from the client */
         cliSockfd = accept(socketId, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
+        std::cout<<"finish 30 seconds"<<std::endl;
         return cliSockfd;
     }
 

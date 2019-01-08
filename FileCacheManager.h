@@ -7,22 +7,27 @@
 
 
 #include <map>
+#include <vector>
 #include "CacheManager.h"
 
-class FileCacheManager : public CacheManager<class Problem, class Solution>{
-    std::map<Problem*, Solution*> generalCache;
-    std::map<Problem*, Solution*> updatedCache;
+using std::string;
+class FileCacheManager : public CacheManager {
+    std::map<string, string> generalCache;
+    std::map<string, string> updatedCache;
 public:
-    bool findSolution(Problem* problem) override;
+    FileCacheManager() = default;
 
-    const Solution &getSolution(Problem* problem) override;
+    virtual bool findSolution(string problem) override;
 
-    void storeSolution(Problem* problem, Solution* solution) {
-        this->generalCache.insert(std::pair<Problem*, Solution*>(problem, solution));
-        this->updatedCache.insert(std::pair<Problem*, Solution*>(problem, solution));
-    }
+    virtual std::string getSolution(string problem) override;
 
-    void writeToFile(std::string fileName);
+    virtual void storeSolution(string problem, string solution) override;
+
+    void writeToFile(string fileName);
+
+    void readFromFile(string fileName);
+
+    std::vector<string> split(string info, char divide);
 };
 
 

@@ -11,10 +11,9 @@
 
 class MyTestClientHandler : public ClientHandler {
     Solver<std::string, std::string>* solver;
-    CacheManager<std::string, std::string> *cache;
+    CacheManager *cache;
 public:
-    MyTestClientHandler(Solver<std::string, std::string>* solver, CacheManager<std::string, std::string> *cache)
-    : solver(solver) {
+    MyTestClientHandler(Solver<std::string, std::string>* solver, CacheManager* cache) : solver(solver) {
         this->cache = cache;
     }
     void handleClient(int cliSocket) override;

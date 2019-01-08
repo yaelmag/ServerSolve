@@ -84,9 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/yael/CLionProjects/project2/CacheManager.cpp">
-			<Option target="project2"/>
-		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/CacheManager.h">
 			<Option target="project2"/>
 		</Unit>
