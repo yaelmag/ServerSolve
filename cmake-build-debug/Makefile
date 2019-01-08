@@ -204,33 +204,6 @@ BestFirstSearch.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/BestFirstSearch.cpp.s
 .PHONY : BestFirstSearch.cpp.s
 
-CacheManager.o: CacheManager.cpp.o
-
-.PHONY : CacheManager.o
-
-# target to build an object file
-CacheManager.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/CacheManager.cpp.o
-.PHONY : CacheManager.cpp.o
-
-CacheManager.i: CacheManager.cpp.i
-
-.PHONY : CacheManager.i
-
-# target to preprocess a source file
-CacheManager.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/CacheManager.cpp.i
-.PHONY : CacheManager.cpp.i
-
-CacheManager.s: CacheManager.cpp.s
-
-.PHONY : CacheManager.s
-
-# target to generate assembly for a file
-CacheManager.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/CacheManager.cpp.s
-.PHONY : CacheManager.cpp.s
-
 DFS.o: DFS.cpp.o
 
 .PHONY : DFS.o
@@ -465,9 +438,6 @@ help:
 	@echo "... BestFirstSearch.o"
 	@echo "... BestFirstSearch.i"
 	@echo "... BestFirstSearch.s"
-	@echo "... CacheManager.o"
-	@echo "... CacheManager.i"
-	@echo "... CacheManager.s"
 	@echo "... DFS.o"
 	@echo "... DFS.i"
 	@echo "... DFS.s"

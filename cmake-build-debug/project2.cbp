@@ -102,9 +102,6 @@
 		<Unit filename="/home/adi/CLionProjects/project2/BestFirstSearch.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/CacheManager.cpp">
-			<Option target="project2"/>
-		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/CacheManager.h">
 			<Option target="project2"/>
 		</Unit>

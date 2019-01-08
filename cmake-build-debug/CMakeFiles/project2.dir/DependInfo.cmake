@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/adi/CLionProjects/project2/Astar.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/Astar.cpp.o"
   "/home/adi/CLionProjects/project2/BFS.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/BFS.cpp.o"
   "/home/adi/CLionProjects/project2/BestFirstSearch.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/BestFirstSearch.cpp.o"
-  "/home/adi/CLionProjects/project2/CacheManager.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/CacheManager.cpp.o"
   "/home/adi/CLionProjects/project2/DFS.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/DFS.cpp.o"
   "/home/adi/CLionProjects/project2/FileCacheManager.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/FileCacheManager.cpp.o"
   "/home/adi/CLionProjects/project2/HillClimbing.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/HillClimbing.cpp.o"
