@@ -9,9 +9,10 @@
 #include <map>
 #include "Solver.h"
 
-class ReverserSolver : Solver<std::string, std::string> {
+using std::string;
+class ReverserSolver : public Solver<string, string> {
 public:
-    std::string solve(std::string problem) override;
+    string solve(string problem) override;
 };
 
 

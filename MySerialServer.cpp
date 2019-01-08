@@ -13,16 +13,16 @@ server_side::MySerialServer::MySerialServer() {
 
 void server_side::MySerialServer::open(int port, ClientHandler* c) {
     int socketId = TcpServer::openSocket(port);
-   /* std::thread t (&start, socketId, c);
-    t.detach();*/
-    serverThread = std::thread([](int socketId,ClientHandler *c,
+    std::thread serverThread (&start, socketId, c, stopRunning);
+    serverThread.join();
+    std::cout << "beforethread" << std::endl;
+    /*serverThread = std::thread([](int socketId,ClientHandler *c,
             bool* stopRunning) {
-        int cliSockfd;
-        while (!*stopRunning) {
-
-            cliSockfd = TcpServer::acceptConnection(socketId);
-
-            cliSockfd = TcpServer::acceptConnection(socketId);
+        *//*int cliSockfd;*//*
+        std::cout << "outsideloop" << std::endl;
+        while (!(*stopRunning)) {
+            std::cout << "inloop" << std::endl;
+            int cliSockfd = TcpServer::acceptConnection(socketId);
             if (cliSockfd < 0) {
                 perror("ERROR on accept");
                 exit(1);
@@ -34,22 +34,24 @@ void server_side::MySerialServer::open(int port, ClientHandler* c) {
         TcpServer::closeSocket(socketId);
 
     }, socketId, c, stopRunning);
-
+*/
 }
 
-/*void server_side::MySerialServer::start(int socketId, ClientHandler* c) {
+void server_side::MySerialServer::start(int socketId, ClientHandler* c, bool *stopRunning) {
     int cliSockfd;
     while (!*(stopRunning)) {
+        std::cout<<"infunc"<<std::endl;
         cliSockfd = TcpServer::acceptConnection(socketId);
         if (cliSockfd < 0) {
             perror("ERROR on accept");
             exit(1);
         }
+        std::cout<<"yayy"<<std::endl;
         c->handleClient(cliSockfd);
         TcpServer::closeSocket(cliSockfd);
     }
     TcpServer::closeSocket(socketId);
-}*/
+}
 
 void server_side::MySerialServer::stop() {
     *(this->stopRunning) = true;
