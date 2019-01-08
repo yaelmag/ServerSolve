@@ -11,15 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b38b70-ec25-48cf-ab1c-2e98fc4b7b1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySerialServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MySerialServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySerialServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/MySerialServer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TcpServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TcpServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TcpServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/TcpServer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/project2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/project2" afterDir="false" />
-    </list>
+    <list default="true" id="f2b38b70-ec25-48cf-ab1c-2e98fc4b7b1b" name="Default Changelist" comment="update :)" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +32,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="18" />
+          <entry key="cpp" value="19" />
           <entry key="h" value="22" />
           <entry key="txt" value="3" />
         </counts>
@@ -48,12 +40,12 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="3" />
-          <entry key="ObjectiveC" value="40" />
+          <entry key="ObjectiveC" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="841" />
+          <entry key="cpp" value="842" />
           <entry key="h" value="249" />
           <entry key="txt" value="23" />
         </counts>
@@ -61,7 +53,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="7" />
-          <entry key="ObjectiveC" value="1090" />
+          <entry key="ObjectiveC" value="1091" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -69,11 +61,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySerialServer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+              <folding>
+                <element signature="e#38#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyTestClientHandler.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            <state relative-caret-position="98">
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
               <folding>
                 <element signature="e#37#69#0" expanded="true" />
               </folding>
@@ -127,12 +131,12 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Server.h" />
         <option value="$PROJECT_DIR$/FileCacheManager.cpp" />
-        <option value="$PROJECT_DIR$/MyTestClientHandler.cpp" />
         <option value="$PROJECT_DIR$/TcpServer.cpp" />
         <option value="$PROJECT_DIR$/TcpServer.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/MySerialServer.h" />
         <option value="$PROJECT_DIR$/MySerialServer.cpp" />
+        <option value="$PROJECT_DIR$/MyTestClientHandler.cpp" />
       </list>
     </option>
   </component>
@@ -217,7 +221,7 @@
       <workItem from="1546871864732" duration="450000" />
       <workItem from="1546887241827" duration="3105000" />
       <workItem from="1546939315636" duration="135000" />
-      <workItem from="1546939537690" duration="14414000" />
+      <workItem from="1546939537690" duration="17660000" />
     </task>
     <task id="LOCAL-00001" summary="hi there">
       <created>1546893535385</created>
@@ -240,22 +244,28 @@
       <option name="project" value="LOCAL" />
       <updated>1546950478638</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update :)">
+      <created>1546967632308</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546967632311</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23027000" />
+    <option name="totallyTimeSpent" value="26273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1409" height="742" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26304188" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26304188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -402,33 +412,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TcpServer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#1113#1731#0" />
-            <element signature="e#1737#1824#0" />
-            <element signature="e#1830#2424#0" />
-            <element signature="e#2434#2508#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySerialServer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#38#65#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -442,10 +429,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TcpServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#1113#1731#0" />
+            <element signature="e#1737#1824#0" />
+            <element signature="e#1830#2424#0" />
+            <element signature="e#2434#2508#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySerialServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#38#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyTestClientHandler.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        <state relative-caret-position="98">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding>
             <element signature="e#37#69#0" expanded="true" />
           </folding>
