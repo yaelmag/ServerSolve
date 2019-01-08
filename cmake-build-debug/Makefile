@@ -150,33 +150,6 @@ CacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/CacheManager.cpp.s
 .PHONY : CacheManager.cpp.s
 
-ClientHandler.o: ClientHandler.cpp.o
-
-.PHONY : ClientHandler.o
-
-# target to build an object file
-ClientHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/ClientHandler.cpp.o
-.PHONY : ClientHandler.cpp.o
-
-ClientHandler.i: ClientHandler.cpp.i
-
-.PHONY : ClientHandler.i
-
-# target to preprocess a source file
-ClientHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/ClientHandler.cpp.i
-.PHONY : ClientHandler.cpp.i
-
-ClientHandler.s: ClientHandler.cpp.s
-
-.PHONY : ClientHandler.s
-
-# target to generate assembly for a file
-ClientHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/ClientHandler.cpp.s
-.PHONY : ClientHandler.cpp.s
-
 FileCacheManager.o: FileCacheManager.cpp.o
 
 .PHONY : FileCacheManager.o
@@ -258,32 +231,59 @@ MyTestClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MyTestClientHandler.cpp.s
 .PHONY : MyTestClientHandler.cpp.s
 
-Solver.o: Solver.cpp.o
+ReverserSolver.o: ReverserSolver.cpp.o
 
-.PHONY : Solver.o
+.PHONY : ReverserSolver.o
 
 # target to build an object file
-Solver.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Solver.cpp.o
-.PHONY : Solver.cpp.o
+ReverserSolver.cpp.o:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/ReverserSolver.cpp.o
+.PHONY : ReverserSolver.cpp.o
 
-Solver.i: Solver.cpp.i
+ReverserSolver.i: ReverserSolver.cpp.i
 
-.PHONY : Solver.i
+.PHONY : ReverserSolver.i
 
 # target to preprocess a source file
-Solver.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Solver.cpp.i
-.PHONY : Solver.cpp.i
+ReverserSolver.cpp.i:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/ReverserSolver.cpp.i
+.PHONY : ReverserSolver.cpp.i
 
-Solver.s: Solver.cpp.s
+ReverserSolver.s: ReverserSolver.cpp.s
 
-.PHONY : Solver.s
+.PHONY : ReverserSolver.s
 
 # target to generate assembly for a file
-Solver.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Solver.cpp.s
-.PHONY : Solver.cpp.s
+ReverserSolver.cpp.s:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/ReverserSolver.cpp.s
+.PHONY : ReverserSolver.cpp.s
+
+TcpServer.o: TcpServer.cpp.o
+
+.PHONY : TcpServer.o
+
+# target to build an object file
+TcpServer.cpp.o:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/TcpServer.cpp.o
+.PHONY : TcpServer.cpp.o
+
+TcpServer.i: TcpServer.cpp.i
+
+.PHONY : TcpServer.i
+
+# target to preprocess a source file
+TcpServer.cpp.i:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/TcpServer.cpp.i
+.PHONY : TcpServer.cpp.i
+
+TcpServer.s: TcpServer.cpp.s
+
+.PHONY : TcpServer.s
+
+# target to generate assembly for a file
+TcpServer.cpp.s:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/TcpServer.cpp.s
+.PHONY : TcpServer.cpp.s
 
 main.o: main.cpp.o
 
@@ -312,33 +312,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-server_side.o: server_side.cpp.o
-
-.PHONY : server_side.o
-
-# target to build an object file
-server_side.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/server_side.cpp.o
-.PHONY : server_side.cpp.o
-
-server_side.i: server_side.cpp.i
-
-.PHONY : server_side.i
-
-# target to preprocess a source file
-server_side.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/server_side.cpp.i
-.PHONY : server_side.cpp.i
-
-server_side.s: server_side.cpp.s
-
-.PHONY : server_side.s
-
-# target to generate assembly for a file
-server_side.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/server_side.cpp.s
-.PHONY : server_side.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -351,9 +324,6 @@ help:
 	@echo "... CacheManager.o"
 	@echo "... CacheManager.i"
 	@echo "... CacheManager.s"
-	@echo "... ClientHandler.o"
-	@echo "... ClientHandler.i"
-	@echo "... ClientHandler.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
@@ -363,15 +333,15 @@ help:
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
-	@echo "... Solver.o"
-	@echo "... Solver.i"
-	@echo "... Solver.s"
+	@echo "... ReverserSolver.o"
+	@echo "... ReverserSolver.i"
+	@echo "... ReverserSolver.s"
+	@echo "... TcpServer.o"
+	@echo "... TcpServer.i"
+	@echo "... TcpServer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... server_side.o"
-	@echo "... server_side.i"
-	@echo "... server_side.s"
 .PHONY : help
 
 

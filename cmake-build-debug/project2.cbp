@@ -90,9 +90,6 @@
 		<Unit filename="/home/yael/CLionProjects/project2/CacheManager.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/ClientHandler.cpp">
-			<Option target="project2"/>
-		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/ClientHandler.h">
 			<Option target="project2"/>
 		</Unit>
@@ -114,19 +111,25 @@
 		<Unit filename="/home/yael/CLionProjects/project2/MyTestClientHandler.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/Solver.cpp">
+		<Unit filename="/home/yael/CLionProjects/project2/ReverserSolver.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/ReverserSolver.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/Server.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/Solver.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/TcpServer.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/yael/CLionProjects/project2/TcpServer.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/main.cpp">
-			<Option target="project2"/>
-		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/server_side.cpp">
-			<Option target="project2"/>
-		</Unit>
-		<Unit filename="/home/yael/CLionProjects/project2/server_side.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/yael/CLionProjects/project2/CMakeLists.txt">

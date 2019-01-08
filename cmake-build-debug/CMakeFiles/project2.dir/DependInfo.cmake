@@ -5,13 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/yael/CLionProjects/project2/CacheManager.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/CacheManager.cpp.o"
-  "/home/yael/CLionProjects/project2/ClientHandler.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/ClientHandler.cpp.o"
   "/home/yael/CLionProjects/project2/FileCacheManager.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/FileCacheManager.cpp.o"
   "/home/yael/CLionProjects/project2/MySerialServer.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MySerialServer.cpp.o"
   "/home/yael/CLionProjects/project2/MyTestClientHandler.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MyTestClientHandler.cpp.o"
-  "/home/yael/CLionProjects/project2/Solver.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/Solver.cpp.o"
+  "/home/yael/CLionProjects/project2/ReverserSolver.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/ReverserSolver.cpp.o"
+  "/home/yael/CLionProjects/project2/TcpServer.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/TcpServer.cpp.o"
   "/home/yael/CLionProjects/project2/main.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/main.cpp.o"
-  "/home/yael/CLionProjects/project2/server_side.cpp" "/home/yael/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/server_side.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

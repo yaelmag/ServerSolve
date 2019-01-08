@@ -7,11 +7,10 @@
 
 #include <string>
 
-using namespace std;
-
+template <class Problem, class Solution>
 class Solver {
 public:
-    virtual string solve(string problem) = 0;
+    virtual Solution solve(Problem problem) = 0;
 };
 
 
