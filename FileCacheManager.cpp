@@ -11,7 +11,7 @@ bool FileCacheManager::findSolution(Problem* problem) {
 
 const Solution &FileCacheManager::getSolution(Problem* problem) {
     if (this->generalCache.count(problem)) {
-        return this->generalCache.
+        //return this->generalCache.
     }
 }
 
