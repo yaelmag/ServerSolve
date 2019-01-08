@@ -3,3 +3,22 @@
 //
 
 #include "FileCacheManager.h"
+
+
+bool FileCacheManager::findSolution(Problem* problem) {
+    return false;
+}
+
+const Solution &FileCacheManager::getSolution() {
+    //return <#initializer#>;
+}
+
+void FileCacheManager::storeSolution(Problem* problem, Solution* solution) {
+
+}
+
+void FileCacheManager::writeToFile(std::string fileName) {
+    for (auto problem: cache) {
+
+    }
+}

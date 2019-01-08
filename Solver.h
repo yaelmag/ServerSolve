@@ -7,11 +7,9 @@
 
 #include <string>
 
-using namespace std;
-
 class Solver {
 public:
-    virtual string solve(string problem) = 0;
+    virtual std::string solve(std::string problem) = 0;
 };
 
 

@@ -5,16 +5,19 @@
 #ifndef PROJECT2_MYSERIALSERVER_H
 #define PROJECT2_MYSERIALSERVER_H
 
-#include "server_side.h"
+#include "Server.h"
 
-using namespace server_side;
+namespace server_side {
 
-class MySerialServer : public Server {
-public:
-    void open(int port, ClientHandler c) override;
+    class MySerialServer : public Server {
+        bool stopRunning;
+    public:
+        MySerialServer();
+        void open(int port, ClientHandler* c) override;
+        void stop() override;
+        void start(int socketId, ClientHandler* c) override;
+    };
 
-    void close() override;
-};
-
+}
 
 #endif //PROJECT2_MYSERIALSERVER_H

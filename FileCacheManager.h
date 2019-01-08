@@ -10,17 +10,15 @@
 #include "CacheManager.h"
 
 class FileCacheManager : public CacheManager<class Problem, class Solution>{
-    map<Problem, Solution> cache;
+    std::map<Problem, Solution> cache;
 public:
-    bool findSolution(Problem* problem) {
-    }
+    bool findSolution(Problem* problem) override;
 
-    const Solution &getSolution() {
-    }
+    const Solution &getSolution() override;
 
-    void storeSolution(Problem* problem, Solution* solution) {
-    }
+    void storeSolution(Problem* problem, Solution* solution) override;
 
+    void writeToFile(std::string fileName);
 };
 
 

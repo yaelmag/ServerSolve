@@ -7,16 +7,15 @@
 
 #include <string>
 
-using namespace std;
 
 template<class Problem, class Solution>
 class CacheManager {
 public:
-    virtual bool findSolution(Problem problem) = 0;
+    virtual bool findSolution(Problem* problem) = 0;
 
     virtual const Solution& getSolution() = 0;
 
-    virtual void storeSolution(Problem problem, Solution solution) = 0;
+    virtual void storeSolution(Problem* problem, Solution* solution) = 0;
 };
 
 
