@@ -7,10 +7,10 @@
 #include <algorithm>
 
 void MyTestClientHandler::handleClient(int cliSocket) {
-    std::string problem = "";
+    std::string problem;
     std::string solution;
+    problem = server_side::TcpServer::readLine(cliSocket);
     while (problem != "end") {
-        problem = server_side::TcpServer::readLine(cliSocket);
         if (cache->findSolution(problem)) {
             solution = cache->getSolution(problem);
         } else {
@@ -18,5 +18,6 @@ void MyTestClientHandler::handleClient(int cliSocket) {
             cache->storeSolution(problem, solution);
         }
         server_side::TcpServer::writeToClient(cliSocket, solution);
+        problem = server_side::TcpServer::readLine(cliSocket);
     }
 }

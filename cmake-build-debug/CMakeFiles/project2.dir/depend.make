@@ -21,10 +21,6 @@ CMakeFiles/project2.dir/FileCacheManager.cpp.o: ../CacheManager.h
 CMakeFiles/project2.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
 CMakeFiles/project2.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
 
-CMakeFiles/project2.dir/HillClimbing.cpp.o: ../HillClimbing.cpp
-CMakeFiles/project2.dir/HillClimbing.cpp.o: ../HillClimbing.h
-CMakeFiles/project2.dir/HillClimbing.cpp.o: ../Searcher.h
-
 CMakeFiles/project2.dir/MySerialServer.cpp.o: ../ClientHandler.h
 CMakeFiles/project2.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
 CMakeFiles/project2.dir/MySerialServer.cpp.o: ../MySerialServer.h

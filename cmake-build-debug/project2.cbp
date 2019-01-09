@@ -120,12 +120,6 @@
 		<Unit filename="/home/adi/CLionProjects/project2/FileCacheManager.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/HillClimbing.cpp">
-			<Option target="project2"/>
-		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/HillClimbing.h">
-			<Option target="project2"/>
-		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/MySerialServer.cpp">
 			<Option target="project2"/>
 		</Unit>

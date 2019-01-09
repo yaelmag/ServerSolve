@@ -9,7 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/project2.dir/DFS.cpp.o"
   "CMakeFiles/project2.dir/Astar.cpp.o"
   "CMakeFiles/project2.dir/BestFirstSearch.cpp.o"
-  "CMakeFiles/project2.dir/HillClimbing.cpp.o"
   "project2.pdb"
   "project2"
 )

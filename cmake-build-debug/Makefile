@@ -258,33 +258,6 @@ FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
 
-HillClimbing.o: HillClimbing.cpp.o
-
-.PHONY : HillClimbing.o
-
-# target to build an object file
-HillClimbing.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/HillClimbing.cpp.o
-.PHONY : HillClimbing.cpp.o
-
-HillClimbing.i: HillClimbing.cpp.i
-
-.PHONY : HillClimbing.i
-
-# target to preprocess a source file
-HillClimbing.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/HillClimbing.cpp.i
-.PHONY : HillClimbing.cpp.i
-
-HillClimbing.s: HillClimbing.cpp.s
-
-.PHONY : HillClimbing.s
-
-# target to generate assembly for a file
-HillClimbing.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/HillClimbing.cpp.s
-.PHONY : HillClimbing.cpp.s
-
 MySerialServer.o: MySerialServer.cpp.o
 
 .PHONY : MySerialServer.o
@@ -444,9 +417,6 @@ help:
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
-	@echo "... HillClimbing.o"
-	@echo "... HillClimbing.i"
-	@echo "... HillClimbing.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
