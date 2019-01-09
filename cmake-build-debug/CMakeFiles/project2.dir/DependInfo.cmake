@@ -12,6 +12,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/adi/CLionProjects/project2/MySerialServer.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MySerialServer.cpp.o"
   "/home/adi/CLionProjects/project2/MyTestClientHandler.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MyTestClientHandler.cpp.o"
   "/home/adi/CLionProjects/project2/ReverserSolver.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/ReverserSolver.cpp.o"
+  "/home/adi/CLionProjects/project2/Searchable.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/Searchable.cpp.o"
+  "/home/adi/CLionProjects/project2/State.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/State.cpp.o"
   "/home/adi/CLionProjects/project2/TcpServer.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/TcpServer.cpp.o"
   "/home/adi/CLionProjects/project2/main.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/main.cpp.o"
   )

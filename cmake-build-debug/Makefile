@@ -339,6 +339,60 @@ ReverserSolver.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/ReverserSolver.cpp.s
 .PHONY : ReverserSolver.cpp.s
 
+Searchable.o: Searchable.cpp.o
+
+.PHONY : Searchable.o
+
+# target to build an object file
+Searchable.cpp.o:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Searchable.cpp.o
+.PHONY : Searchable.cpp.o
+
+Searchable.i: Searchable.cpp.i
+
+.PHONY : Searchable.i
+
+# target to preprocess a source file
+Searchable.cpp.i:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Searchable.cpp.i
+.PHONY : Searchable.cpp.i
+
+Searchable.s: Searchable.cpp.s
+
+.PHONY : Searchable.s
+
+# target to generate assembly for a file
+Searchable.cpp.s:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Searchable.cpp.s
+.PHONY : Searchable.cpp.s
+
+State.o: State.cpp.o
+
+.PHONY : State.o
+
+# target to build an object file
+State.cpp.o:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/State.cpp.o
+.PHONY : State.cpp.o
+
+State.i: State.cpp.i
+
+.PHONY : State.i
+
+# target to preprocess a source file
+State.cpp.i:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/State.cpp.i
+.PHONY : State.cpp.i
+
+State.s: State.cpp.s
+
+.PHONY : State.s
+
+# target to generate assembly for a file
+State.cpp.s:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/State.cpp.s
+.PHONY : State.cpp.s
+
 TcpServer.o: TcpServer.cpp.o
 
 .PHONY : TcpServer.o
@@ -426,6 +480,12 @@ help:
 	@echo "... ReverserSolver.o"
 	@echo "... ReverserSolver.i"
 	@echo "... ReverserSolver.s"
+	@echo "... Searchable.o"
+	@echo "... Searchable.i"
+	@echo "... Searchable.s"
+	@echo "... State.o"
+	@echo "... State.i"
+	@echo "... State.s"
 	@echo "... TcpServer.o"
 	@echo "... TcpServer.i"
 	@echo "... TcpServer.s"

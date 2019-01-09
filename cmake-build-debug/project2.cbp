@@ -138,6 +138,12 @@
 		<Unit filename="/home/adi/CLionProjects/project2/ReverserSolver.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/Searchable.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/Searchable.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/Searcher.h">
 			<Option target="project2"/>
 		</Unit>
@@ -145,6 +151,12 @@
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/Solver.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/State.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/State.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/TcpServer.cpp">
