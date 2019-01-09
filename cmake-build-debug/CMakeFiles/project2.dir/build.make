@@ -200,18 +200,31 @@ CMakeFiles/project2.dir/State.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/State.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/project2/State.cpp -o CMakeFiles/project2.dir/State.cpp.s
 
-CMakeFiles/project2.dir/Searchable.cpp.o: CMakeFiles/project2.dir/flags.make
-CMakeFiles/project2.dir/Searchable.cpp.o: ../Searchable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project2.dir/Searchable.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project2.dir/Searchable.cpp.o -c /home/adi/CLionProjects/project2/Searchable.cpp
+CMakeFiles/project2.dir/MyClientHandler.cpp.o: CMakeFiles/project2.dir/flags.make
+CMakeFiles/project2.dir/MyClientHandler.cpp.o: ../MyClientHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project2.dir/MyClientHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project2.dir/MyClientHandler.cpp.o -c /home/adi/CLionProjects/project2/MyClientHandler.cpp
 
-CMakeFiles/project2.dir/Searchable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project2.dir/Searchable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/project2/Searchable.cpp > CMakeFiles/project2.dir/Searchable.cpp.i
+CMakeFiles/project2.dir/MyClientHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project2.dir/MyClientHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/project2/MyClientHandler.cpp > CMakeFiles/project2.dir/MyClientHandler.cpp.i
 
-CMakeFiles/project2.dir/Searchable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/Searchable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/project2/Searchable.cpp -o CMakeFiles/project2.dir/Searchable.cpp.s
+CMakeFiles/project2.dir/MyClientHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/MyClientHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/project2/MyClientHandler.cpp -o CMakeFiles/project2.dir/MyClientHandler.cpp.s
+
+CMakeFiles/project2.dir/MatrixSearchable.cpp.o: CMakeFiles/project2.dir/flags.make
+CMakeFiles/project2.dir/MatrixSearchable.cpp.o: ../MatrixSearchable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project2.dir/MatrixSearchable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project2.dir/MatrixSearchable.cpp.o -c /home/adi/CLionProjects/project2/MatrixSearchable.cpp
+
+CMakeFiles/project2.dir/MatrixSearchable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project2.dir/MatrixSearchable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/CLionProjects/project2/MatrixSearchable.cpp > CMakeFiles/project2.dir/MatrixSearchable.cpp.i
+
+CMakeFiles/project2.dir/MatrixSearchable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project2.dir/MatrixSearchable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/CLionProjects/project2/MatrixSearchable.cpp -o CMakeFiles/project2.dir/MatrixSearchable.cpp.s
 
 # Object files for target project2
 project2_OBJECTS = \
@@ -226,7 +239,8 @@ project2_OBJECTS = \
 "CMakeFiles/project2.dir/Astar.cpp.o" \
 "CMakeFiles/project2.dir/BestFirstSearch.cpp.o" \
 "CMakeFiles/project2.dir/State.cpp.o" \
-"CMakeFiles/project2.dir/Searchable.cpp.o"
+"CMakeFiles/project2.dir/MyClientHandler.cpp.o" \
+"CMakeFiles/project2.dir/MatrixSearchable.cpp.o"
 
 # External object files for target project2
 project2_EXTERNAL_OBJECTS =
@@ -242,10 +256,11 @@ project2: CMakeFiles/project2.dir/DFS.cpp.o
 project2: CMakeFiles/project2.dir/Astar.cpp.o
 project2: CMakeFiles/project2.dir/BestFirstSearch.cpp.o
 project2: CMakeFiles/project2.dir/State.cpp.o
-project2: CMakeFiles/project2.dir/Searchable.cpp.o
+project2: CMakeFiles/project2.dir/MyClientHandler.cpp.o
+project2: CMakeFiles/project2.dir/MatrixSearchable.cpp.o
 project2: CMakeFiles/project2.dir/build.make
 project2: CMakeFiles/project2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable project2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable project2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

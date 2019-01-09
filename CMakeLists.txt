@@ -8,4 +8,4 @@ add_executable(project2 main.cpp Server.h MySerialServer.cpp MySerialServer.h
         ClientHandler.h MyTestClientHandler.cpp MyTestClientHandler.h
         Solver.h CacheManager.h FileCacheManager.cpp FileCacheManager.h
         TcpServer.cpp TcpServer.h ReverserSolver.cpp ReverserSolver.h Searcher.h BFS.cpp BFS.h
-        DFS.cpp DFS.h Astar.cpp Astar.h BestFirstSearch.cpp BestFirstSearch.h State.cpp State.h Searchable.h)
+        DFS.cpp DFS.h Astar.cpp Astar.h BestFirstSearch.cpp BestFirstSearch.h State.cpp State.h Searchable.h MyClientHandler.cpp MyClientHandler.h MatrixSearchable.cpp MatrixSearchable.h Point.h)

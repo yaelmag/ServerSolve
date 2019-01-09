@@ -13,11 +13,8 @@ double cost;
 // the state we came from to this state (setter)
 State<T>* cameFrom;
 public:
-    State(T state) {
+    State(T state, double cost) {
         this->state = state;
-    }
-
-    void setCost(double cost) {
         this->cost = cost;
     }
 
@@ -29,7 +26,17 @@ public:
     {
         return state.Equals(s.state);
     }*/
+    T getState() const {
+        return state;
+    }
 
+    double getCost() const {
+        return cost;
+    }
+
+    State<T> *getCameFrom() const {
+        return cameFrom;
+    }
 };
 
 #endif //PROJECT2_STATE_H

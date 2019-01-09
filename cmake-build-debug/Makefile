@@ -258,6 +258,60 @@ FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
 
+MatrixSearchable.o: MatrixSearchable.cpp.o
+
+.PHONY : MatrixSearchable.o
+
+# target to build an object file
+MatrixSearchable.cpp.o:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSearchable.cpp.o
+.PHONY : MatrixSearchable.cpp.o
+
+MatrixSearchable.i: MatrixSearchable.cpp.i
+
+.PHONY : MatrixSearchable.i
+
+# target to preprocess a source file
+MatrixSearchable.cpp.i:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSearchable.cpp.i
+.PHONY : MatrixSearchable.cpp.i
+
+MatrixSearchable.s: MatrixSearchable.cpp.s
+
+.PHONY : MatrixSearchable.s
+
+# target to generate assembly for a file
+MatrixSearchable.cpp.s:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSearchable.cpp.s
+.PHONY : MatrixSearchable.cpp.s
+
+MyClientHandler.o: MyClientHandler.cpp.o
+
+.PHONY : MyClientHandler.o
+
+# target to build an object file
+MyClientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MyClientHandler.cpp.o
+.PHONY : MyClientHandler.cpp.o
+
+MyClientHandler.i: MyClientHandler.cpp.i
+
+.PHONY : MyClientHandler.i
+
+# target to preprocess a source file
+MyClientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MyClientHandler.cpp.i
+.PHONY : MyClientHandler.cpp.i
+
+MyClientHandler.s: MyClientHandler.cpp.s
+
+.PHONY : MyClientHandler.s
+
+# target to generate assembly for a file
+MyClientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MyClientHandler.cpp.s
+.PHONY : MyClientHandler.cpp.s
+
 MySerialServer.o: MySerialServer.cpp.o
 
 .PHONY : MySerialServer.o
@@ -338,33 +392,6 @@ ReverserSolver.s: ReverserSolver.cpp.s
 ReverserSolver.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/ReverserSolver.cpp.s
 .PHONY : ReverserSolver.cpp.s
-
-Searchable.o: Searchable.cpp.o
-
-.PHONY : Searchable.o
-
-# target to build an object file
-Searchable.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Searchable.cpp.o
-.PHONY : Searchable.cpp.o
-
-Searchable.i: Searchable.cpp.i
-
-.PHONY : Searchable.i
-
-# target to preprocess a source file
-Searchable.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Searchable.cpp.i
-.PHONY : Searchable.cpp.i
-
-Searchable.s: Searchable.cpp.s
-
-.PHONY : Searchable.s
-
-# target to generate assembly for a file
-Searchable.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Searchable.cpp.s
-.PHONY : Searchable.cpp.s
 
 State.o: State.cpp.o
 
@@ -471,6 +498,12 @@ help:
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
+	@echo "... MatrixSearchable.o"
+	@echo "... MatrixSearchable.i"
+	@echo "... MatrixSearchable.s"
+	@echo "... MyClientHandler.o"
+	@echo "... MyClientHandler.i"
+	@echo "... MyClientHandler.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
@@ -480,9 +513,6 @@ help:
 	@echo "... ReverserSolver.o"
 	@echo "... ReverserSolver.i"
 	@echo "... ReverserSolver.s"
-	@echo "... Searchable.o"
-	@echo "... Searchable.i"
-	@echo "... Searchable.s"
 	@echo "... State.o"
 	@echo "... State.i"
 	@echo "... State.s"

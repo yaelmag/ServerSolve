@@ -120,6 +120,18 @@
 		<Unit filename="/home/adi/CLionProjects/project2/FileCacheManager.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/MatrixSearchable.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/MatrixSearchable.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/MyClientHandler.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/MyClientHandler.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/MySerialServer.cpp">
 			<Option target="project2"/>
 		</Unit>
@@ -132,13 +144,13 @@
 		<Unit filename="/home/adi/CLionProjects/project2/MyTestClientHandler.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/Point.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/ReverserSolver.cpp">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/ReverserSolver.h">
-			<Option target="project2"/>
-		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/Searchable.cpp">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/Searchable.h">

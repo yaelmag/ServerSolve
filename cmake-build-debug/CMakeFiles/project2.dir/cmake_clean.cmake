@@ -10,7 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project2.dir/Astar.cpp.o"
   "CMakeFiles/project2.dir/BestFirstSearch.cpp.o"
   "CMakeFiles/project2.dir/State.cpp.o"
-  "CMakeFiles/project2.dir/Searchable.cpp.o"
+  "CMakeFiles/project2.dir/MyClientHandler.cpp.o"
+  "CMakeFiles/project2.dir/MatrixSearchable.cpp.o"
   "project2.pdb"
   "project2"
 )

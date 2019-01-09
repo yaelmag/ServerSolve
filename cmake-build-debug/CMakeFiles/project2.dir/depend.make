@@ -38,6 +38,9 @@ CMakeFiles/project2.dir/ReverserSolver.cpp.o: ../ReverserSolver.cpp
 CMakeFiles/project2.dir/ReverserSolver.cpp.o: ../ReverserSolver.h
 CMakeFiles/project2.dir/ReverserSolver.cpp.o: ../Solver.h
 
+CMakeFiles/project2.dir/State.cpp.o: ../State.cpp
+CMakeFiles/project2.dir/State.cpp.o: ../State.h
+
 CMakeFiles/project2.dir/TcpServer.cpp.o: ../TcpServer.cpp
 CMakeFiles/project2.dir/TcpServer.cpp.o: ../TcpServer.h
 
