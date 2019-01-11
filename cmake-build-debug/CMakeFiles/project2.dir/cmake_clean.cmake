@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project2.dir/State.cpp.o"
   "CMakeFiles/project2.dir/MyClientHandler.cpp.o"
   "CMakeFiles/project2.dir/MatrixSearchable.cpp.o"
+  "CMakeFiles/project2.dir/Main.cpp.o"
   "project2.pdb"
   "project2"
 )

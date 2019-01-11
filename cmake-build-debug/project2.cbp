@@ -120,6 +120,9 @@
 		<Unit filename="/home/adi/CLionProjects/project2/FileCacheManager.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/Main.cpp">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/MatrixSearchable.cpp">
 			<Option target="project2"/>
 		</Unit>

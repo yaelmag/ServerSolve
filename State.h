@@ -16,16 +16,18 @@ public:
     State(T state, double cost) {
         this->state = state;
         this->cost = cost;
+        this->cameFrom = nullptr;
     }
 
     void setCameFrom(State<T>* cameFrom) {
         this->cameFrom = cameFrom;
     }
 
-    /*bool Equals(State<T> s) // we overload Object's Equals method
+    bool Equals(State<T> *s) // we overload Object's Equals method
     {
-        return state.Equals(s.state);
-    }*/
+        return this->state ==s->getState();
+    }
+
     T getState() const {
         return state;
     }
@@ -37,6 +39,8 @@ public:
     State<T> *getCameFrom() const {
         return cameFrom;
     }
+
+
 };
 
 #endif //PROJECT2_STATE_H

@@ -15,6 +15,12 @@ public:
     virtual std::string getSolution(std::string problem) = 0;
 
     virtual void storeSolution(std::string problem, std::string solution) = 0;
+
+    virtual void loadAtStart() = 0;
+
+    virtual void storeAtTheEnd() = 0;
+
+    virtual ~CacheManager() = default;
 };
 
 

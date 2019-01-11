@@ -10,13 +10,17 @@
 #include "Point.h"
 #include <vector>
 #include <string>
+#include "TcpServer.h"
+#include "MatrixSearchable.h"
+using namespace std;
 
-class MyClientHandler : ClientHandler {
-    std::vector<std::vector<State<Point>>> matrix;
+class MyClientHandler : public ClientHandler {
+    vector<vector<State<vector<int>>*>> matrix;
 public:
+    MyClientHandler() = default;
     void handleClient(int cliSocket) override;
     void addLine(std::string line, int row);
-    std::vector<std::string> split(std::string info, char divide);
+    vector<string> split(string info, char divide);
 };
 
 

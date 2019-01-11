@@ -25,9 +25,15 @@ public:
 
     void writeToFile(string fileName);
 
-    void readFromFile(string fileName);
+    void loadFromFile(string fileName);
 
     std::vector<string> split(string info, char divide);
+
+    void storeAtTheEnd() override;
+
+    void loadAtStart() override;
+
+    virtual ~FileCacheManager() override;
 };
 
 

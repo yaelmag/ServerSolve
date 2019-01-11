@@ -44,15 +44,16 @@ namespace server_side {
         clilen = sizeof(cli_addr);
 
         //set accept timeout
-        struct timeval tv;
+        timeval timeout;
         // Timeout in seconds
-        tv.tv_sec = 30;
-        std::cout<<"before 30"<<std::endl;
-        setsockopt(socketId, SOL_SOCKET, SO_SNDTIMEO,&tv,sizeof(struct timeval));
-        setsockopt(socketId, SOL_SOCKET, SO_RCVTIMEO,&tv,sizeof(struct timeval));
+        timeout.tv_sec = 10;
+        timeout.tv_usec = 0;
+        //std::cout<<"before 30"<<std::endl;
+        setsockopt(socketId, SOL_SOCKET, SO_RCVTIMEO,(char*)&timeout,sizeof(timeout));
+        //setsockopt(socketId, SOL_SOCKET, SO_RCVTIMEO,&tv,sizeof(struct timeval));
         /* Accept actual connection from the client */
         cliSockfd = accept(socketId, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
-        std::cout<<"finish 30 seconds"<<std::endl;
+        //std::cout<<"finish 30 seconds"<<std::endl;
         return cliSockfd;
     }
 
@@ -71,6 +72,9 @@ namespace server_side {
         // n = read(cliSock, buffer, (BUFFER_SIZE - 1));
         while (c != '\n') {
             if (n < 0) {
+                if (errno == EWOULDBLOCK) {
+                    continue;
+                }
                 perror("ERROR reading from socket");
                 exit(1);
             }

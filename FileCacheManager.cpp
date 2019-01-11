@@ -6,6 +6,7 @@
 #include <iostream>
 #include <sstream>
 #include "FileCacheManager.h"
+#define FILE_NAME "reverser.txt"
 
 
 bool FileCacheManager::findSolution(string problem) {
@@ -25,7 +26,7 @@ void FileCacheManager::storeSolution(string problem, string solution) {
 }
 
 void FileCacheManager::writeToFile(string fileName) {
-    std::ofstream f(fileName);
+    std::ofstream f(fileName, std::ios::out | std::ios::app | std::ios::ate);
     if (f.is_open()) {
         for (const auto &problem: updatedCache) {
             f << problem.first;
@@ -33,14 +34,15 @@ void FileCacheManager::writeToFile(string fileName) {
             f << problem.second;
             f << std::endl;
         }
+        f.close();
     } else {
         std::cout << "unable to open file";
     }
 }
 
-void FileCacheManager::readFromFile(std::string fileName) {
+void FileCacheManager::loadFromFile(std::string fileName) {
     string line;
-    std::ifstream file(fileName);
+    std::ifstream file(fileName, std::ios::in);
     std::vector<string> splittedLine;
     if (file.is_open()) {
         while (getline(file, line)) {
@@ -49,6 +51,7 @@ void FileCacheManager::readFromFile(std::string fileName) {
             string solution = splittedLine.at(1);
             this->generalCache.insert(std::pair<string, string>(problem, solution));
         }
+        file.close();
     } else {
         std::cout << "unable to open file";
     }
@@ -63,4 +66,17 @@ std::vector<string> FileCacheManager::split(string info, char divide) {
         splitLine.push_back(part);
     }
     return splitLine;
+}
+
+FileCacheManager::~FileCacheManager() {
+}
+
+void FileCacheManager::storeAtTheEnd() {
+    this->writeToFile(FILE_NAME);
+    //this->generalCache.clear();
+    //this->updatedCache.clear();
+}
+
+void FileCacheManager::loadAtStart() {
+    this->loadFromFile(FILE_NAME);
 }
