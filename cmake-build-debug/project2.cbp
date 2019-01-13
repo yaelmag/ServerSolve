@@ -84,19 +84,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/adi/CLionProjects/project2/Astar.cpp">
-			<Option target="project2"/>
-		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/Astar.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/BFS.cpp">
-			<Option target="project2"/>
-		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/BFS.h">
-			<Option target="project2"/>
-		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/BestFirstSearch.cpp">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/BestFirstSearch.h">
@@ -106,9 +97,6 @@
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/ClientHandler.h">
-			<Option target="project2"/>
-		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/DFS.cpp">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/DFS.h">
@@ -123,16 +111,7 @@
 		<Unit filename="/home/adi/CLionProjects/project2/Main.cpp">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/MatrixSearchable.cpp">
-			<Option target="project2"/>
-		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/MatrixSearchable.h">
-			<Option target="project2"/>
-		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/MatrixSolver.cpp">
-			<Option target="project2"/>
-		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/MatrixSolver.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/MyClientHandler.cpp">
@@ -168,13 +147,13 @@
 		<Unit filename="/home/adi/CLionProjects/project2/Searcher.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/SearcherSolver.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/Server.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/Solver.h">
-			<Option target="project2"/>
-		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/State.cpp">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/State.h">

@@ -19,7 +19,34 @@ class MatrixSearchable : public Searchable <T> {
 
 public:
     MatrixSearchable(const vector<vector<State<Point> *>> &matrix, State<T> *start,
-                     State<T> *end) : matrix(matrix), start(start), end(end) {}
+                     State<T> *end) : matrix(matrix), start(start), end(end) {
+        unsigned long numRows, numCols, row, col;
+        numRows = matrix.size();
+        numCols = matrix[0].size();
+
+        // set to every state his neighbors
+        for (unsigned long i = 0; i < numRows; i++) {
+            for (unsigned long j = 0; j < numCols; j++) {
+                // set up state
+                if (i != 0 && this->matrix[i - 1][j]->getCost() != -1) {
+                    this->matrix[i][j]->setUpState(this->matrix[i - 1][j]);
+                }
+                // set down state
+                if (i != numRows - 1 && this->matrix[i + 1][j]->getCost() != -1) {
+                    this->matrix[i][j]->setDownState(this->matrix[i + 1][j]);
+                }
+                // set left state
+                if (j != 0 && this->matrix[i][j - 1]->getCost() != -1) {
+                    this->matrix[i][j]->setLeftState(this->matrix[i][j - 1]);
+                }
+                // set right state
+                if (j != numCols - 1 && this->matrix[i][j + 1]->getCost() != -1) {
+                    this->matrix[i][j]->setRightState(this->matrix[i][j + 1]);
+                }
+            }
+        }
+
+    }
 
     State<T>* getInitialState() override {
        return this->start;
@@ -30,39 +57,12 @@ public:
     }
 
     vector<State<T>*> getAllPossibleStates(State<T>* s) override {
-        std::vector<State<Point>*> allStates;
+        return s->getAllNeighbors();
+        /*std::vector<State<Point>*> allStates;
         unsigned long numRows, numCols, row, col;
         numRows = matrix.size();
         numCols = matrix[0].size();
-        /* bool flag = false;
-        for (unsigned long i = 0; i < numRows; i++) {
-            for (unsigned long j = 0; j < numCols; j++) {
-                if (matrix[i][j]->getState()[0] == s->getState()[0] && matrix[i][j]->getState()[1]
-                == s->getState()[1]) {
-                    // check up state
-                    if (i != 0) {
-                        allStates.push_back(matrix[i - 1][j]);
-                    }
-                    // check down state
-                    if (i != numRows - 1) {
-                        allStates.push_back(matrix[i + 1][j]);
-                    }
-                    // check left state
-                    if (j != 0) {
-                        allStates.push_back(matrix[i][j - 1]);
-                    }
-                    // check right state
-                    if (j != numCols - 1) {
-                        allStates.push_back(matrix[i][j + 1]);
-                    }
-                    flag = true;
-                    break;
-                }
-            }
-            if (flag == true) {
-                break;
-            }
-        }*/
+
         row = s->getState().getRow();
         col = s->getState().getCol();
 
@@ -79,10 +79,11 @@ public:
             allStates.push_back(this->matrix[row][col + 1]);
         }
         printStates(allStates && this->matrix[row - 1][col]->getCost() != -1);
-        return allStates;
+        return allStates;*/
     }
 
     void printStates (vector<State<T>*> states) {
+
         double cost;
         for (unsigned long i = 0; i < states.size(); i++) {
             cost = states[i]->getCost();

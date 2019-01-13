@@ -123,114 +123,6 @@ project2/fast:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/build
 .PHONY : project2/fast
 
-Astar.o: Astar.cpp.o
-
-.PHONY : Astar.o
-
-# target to build an object file
-Astar.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Astar.cpp.o
-.PHONY : Astar.cpp.o
-
-Astar.i: Astar.cpp.i
-
-.PHONY : Astar.i
-
-# target to preprocess a source file
-Astar.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Astar.cpp.i
-.PHONY : Astar.cpp.i
-
-Astar.s: Astar.cpp.s
-
-.PHONY : Astar.s
-
-# target to generate assembly for a file
-Astar.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Astar.cpp.s
-.PHONY : Astar.cpp.s
-
-BFS.o: BFS.cpp.o
-
-.PHONY : BFS.o
-
-# target to build an object file
-BFS.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/BFS.cpp.o
-.PHONY : BFS.cpp.o
-
-BFS.i: BFS.cpp.i
-
-.PHONY : BFS.i
-
-# target to preprocess a source file
-BFS.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/BFS.cpp.i
-.PHONY : BFS.cpp.i
-
-BFS.s: BFS.cpp.s
-
-.PHONY : BFS.s
-
-# target to generate assembly for a file
-BFS.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/BFS.cpp.s
-.PHONY : BFS.cpp.s
-
-BestFirstSearch.o: BestFirstSearch.cpp.o
-
-.PHONY : BestFirstSearch.o
-
-# target to build an object file
-BestFirstSearch.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/BestFirstSearch.cpp.o
-.PHONY : BestFirstSearch.cpp.o
-
-BestFirstSearch.i: BestFirstSearch.cpp.i
-
-.PHONY : BestFirstSearch.i
-
-# target to preprocess a source file
-BestFirstSearch.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/BestFirstSearch.cpp.i
-.PHONY : BestFirstSearch.cpp.i
-
-BestFirstSearch.s: BestFirstSearch.cpp.s
-
-.PHONY : BestFirstSearch.s
-
-# target to generate assembly for a file
-BestFirstSearch.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/BestFirstSearch.cpp.s
-.PHONY : BestFirstSearch.cpp.s
-
-DFS.o: DFS.cpp.o
-
-.PHONY : DFS.o
-
-# target to build an object file
-DFS.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/DFS.cpp.o
-.PHONY : DFS.cpp.o
-
-DFS.i: DFS.cpp.i
-
-.PHONY : DFS.i
-
-# target to preprocess a source file
-DFS.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/DFS.cpp.i
-.PHONY : DFS.cpp.i
-
-DFS.s: DFS.cpp.s
-
-.PHONY : DFS.s
-
-# target to generate assembly for a file
-DFS.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/DFS.cpp.s
-.PHONY : DFS.cpp.s
-
 FileCacheManager.o: FileCacheManager.cpp.o
 
 .PHONY : FileCacheManager.o
@@ -284,60 +176,6 @@ Main.s: Main.cpp.s
 Main.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/Main.cpp.s
 .PHONY : Main.cpp.s
-
-MatrixSearchable.o: MatrixSearchable.cpp.o
-
-.PHONY : MatrixSearchable.o
-
-# target to build an object file
-MatrixSearchable.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSearchable.cpp.o
-.PHONY : MatrixSearchable.cpp.o
-
-MatrixSearchable.i: MatrixSearchable.cpp.i
-
-.PHONY : MatrixSearchable.i
-
-# target to preprocess a source file
-MatrixSearchable.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSearchable.cpp.i
-.PHONY : MatrixSearchable.cpp.i
-
-MatrixSearchable.s: MatrixSearchable.cpp.s
-
-.PHONY : MatrixSearchable.s
-
-# target to generate assembly for a file
-MatrixSearchable.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSearchable.cpp.s
-.PHONY : MatrixSearchable.cpp.s
-
-MatrixSolver.o: MatrixSolver.cpp.o
-
-.PHONY : MatrixSolver.o
-
-# target to build an object file
-MatrixSolver.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSolver.cpp.o
-.PHONY : MatrixSolver.cpp.o
-
-MatrixSolver.i: MatrixSolver.cpp.i
-
-.PHONY : MatrixSolver.i
-
-# target to preprocess a source file
-MatrixSolver.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSolver.cpp.i
-.PHONY : MatrixSolver.cpp.i
-
-MatrixSolver.s: MatrixSolver.cpp.s
-
-.PHONY : MatrixSolver.s
-
-# target to generate assembly for a file
-MatrixSolver.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSolver.cpp.s
-.PHONY : MatrixSolver.cpp.s
 
 MyClientHandler.o: MyClientHandler.cpp.o
 
@@ -447,33 +285,6 @@ ReverserSolver.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/ReverserSolver.cpp.s
 .PHONY : ReverserSolver.cpp.s
 
-State.o: State.cpp.o
-
-.PHONY : State.o
-
-# target to build an object file
-State.cpp.o:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/State.cpp.o
-.PHONY : State.cpp.o
-
-State.i: State.cpp.i
-
-.PHONY : State.i
-
-# target to preprocess a source file
-State.cpp.i:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/State.cpp.i
-.PHONY : State.cpp.i
-
-State.s: State.cpp.s
-
-.PHONY : State.s
-
-# target to generate assembly for a file
-State.cpp.s:
-	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/State.cpp.s
-.PHONY : State.cpp.s
-
 TcpServer.o: TcpServer.cpp.o
 
 .PHONY : TcpServer.o
@@ -537,30 +348,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... project2"
-	@echo "... Astar.o"
-	@echo "... Astar.i"
-	@echo "... Astar.s"
-	@echo "... BFS.o"
-	@echo "... BFS.i"
-	@echo "... BFS.s"
-	@echo "... BestFirstSearch.o"
-	@echo "... BestFirstSearch.i"
-	@echo "... BestFirstSearch.s"
-	@echo "... DFS.o"
-	@echo "... DFS.i"
-	@echo "... DFS.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
-	@echo "... MatrixSearchable.o"
-	@echo "... MatrixSearchable.i"
-	@echo "... MatrixSearchable.s"
-	@echo "... MatrixSolver.o"
-	@echo "... MatrixSolver.i"
-	@echo "... MatrixSolver.s"
 	@echo "... MyClientHandler.o"
 	@echo "... MyClientHandler.i"
 	@echo "... MyClientHandler.s"
@@ -573,9 +366,6 @@ help:
 	@echo "... ReverserSolver.o"
 	@echo "... ReverserSolver.i"
 	@echo "... ReverserSolver.s"
-	@echo "... State.o"
-	@echo "... State.i"
-	@echo "... State.s"
 	@echo "... TcpServer.o"
 	@echo "... TcpServer.i"
 	@echo "... TcpServer.s"
