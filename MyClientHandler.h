@@ -15,12 +15,14 @@
 using namespace std;
 
 class MyClientHandler : public ClientHandler {
-    vector<vector<State<vector<int>>*>> matrix;
+    vector<vector<State<Point>*>> matrix;
+    CacheManager* cache;
 public:
     MyClientHandler() = default;
     void handleClient(int cliSocket) override;
     void addLine(std::string line, int row);
     vector<string> split(string info, char divide);
+    bool checkValidOfPoint(Point p);
 };
 
 

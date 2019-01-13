@@ -6,6 +6,7 @@
 #define PROJECT2_SOLVER_H
 
 #include <string>
+using namespace std;
 
 template <class Problem, class Solution>
 class Solver {

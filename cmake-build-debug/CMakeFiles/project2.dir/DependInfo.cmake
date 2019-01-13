@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/adi/CLionProjects/project2/FileCacheManager.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/FileCacheManager.cpp.o"
   "/home/adi/CLionProjects/project2/Main.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/Main.cpp.o"
   "/home/adi/CLionProjects/project2/MatrixSearchable.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MatrixSearchable.cpp.o"
+  "/home/adi/CLionProjects/project2/MatrixSolver.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MatrixSolver.cpp.o"
   "/home/adi/CLionProjects/project2/MyClientHandler.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MyClientHandler.cpp.o"
   "/home/adi/CLionProjects/project2/MySerialServer.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MySerialServer.cpp.o"
   "/home/adi/CLionProjects/project2/MyTestClientHandler.cpp" "/home/adi/CLionProjects/project2/cmake-build-debug/CMakeFiles/project2.dir/MyTestClientHandler.cpp.o"

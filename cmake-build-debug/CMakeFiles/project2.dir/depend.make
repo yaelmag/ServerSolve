@@ -25,11 +25,17 @@ CMakeFiles/project2.dir/Main.cpp.o: ../CacheManager.h
 CMakeFiles/project2.dir/Main.cpp.o: ../ClientHandler.h
 CMakeFiles/project2.dir/Main.cpp.o: ../FileCacheManager.h
 CMakeFiles/project2.dir/Main.cpp.o: ../Main.cpp
+CMakeFiles/project2.dir/Main.cpp.o: ../MatrixSearchable.h
+CMakeFiles/project2.dir/Main.cpp.o: ../MyClientHandler.h
 CMakeFiles/project2.dir/Main.cpp.o: ../MySerialServer.h
 CMakeFiles/project2.dir/Main.cpp.o: ../MyTestClientHandler.h
+CMakeFiles/project2.dir/Main.cpp.o: ../Point.h
 CMakeFiles/project2.dir/Main.cpp.o: ../ReverserSolver.h
+CMakeFiles/project2.dir/Main.cpp.o: ../Searchable.h
 CMakeFiles/project2.dir/Main.cpp.o: ../Server.h
 CMakeFiles/project2.dir/Main.cpp.o: ../Solver.h
+CMakeFiles/project2.dir/Main.cpp.o: ../State.h
+CMakeFiles/project2.dir/Main.cpp.o: ../TcpServer.h
 
 CMakeFiles/project2.dir/MatrixSearchable.cpp.o: ../MatrixSearchable.cpp
 CMakeFiles/project2.dir/MatrixSearchable.cpp.o: ../MatrixSearchable.h

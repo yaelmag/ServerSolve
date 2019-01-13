@@ -312,6 +312,33 @@ MatrixSearchable.cpp.s:
 	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSearchable.cpp.s
 .PHONY : MatrixSearchable.cpp.s
 
+MatrixSolver.o: MatrixSolver.cpp.o
+
+.PHONY : MatrixSolver.o
+
+# target to build an object file
+MatrixSolver.cpp.o:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSolver.cpp.o
+.PHONY : MatrixSolver.cpp.o
+
+MatrixSolver.i: MatrixSolver.cpp.i
+
+.PHONY : MatrixSolver.i
+
+# target to preprocess a source file
+MatrixSolver.cpp.i:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSolver.cpp.i
+.PHONY : MatrixSolver.cpp.i
+
+MatrixSolver.s: MatrixSolver.cpp.s
+
+.PHONY : MatrixSolver.s
+
+# target to generate assembly for a file
+MatrixSolver.cpp.s:
+	$(MAKE) -f CMakeFiles/project2.dir/build.make CMakeFiles/project2.dir/MatrixSolver.cpp.s
+.PHONY : MatrixSolver.cpp.s
+
 MyClientHandler.o: MyClientHandler.cpp.o
 
 .PHONY : MyClientHandler.o
@@ -531,6 +558,9 @@ help:
 	@echo "... MatrixSearchable.o"
 	@echo "... MatrixSearchable.i"
 	@echo "... MatrixSearchable.s"
+	@echo "... MatrixSolver.o"
+	@echo "... MatrixSolver.i"
+	@echo "... MatrixSolver.s"
 	@echo "... MyClientHandler.o"
 	@echo "... MyClientHandler.i"
 	@echo "... MyClientHandler.s"
