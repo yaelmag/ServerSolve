@@ -7,8 +7,12 @@
 
 #include "Searcher.h"
 
-class DFS : public Searcher{
+template <class T>
+class DFS : public Searcher <T> {
+public:
+    SearchResult search(Searchable<T> *searchable) override {
 
+    }
 };
 
 
