@@ -66,10 +66,15 @@ public:
             searchResult.developedVerticels++;
         }
 
-        bool arrivedInitialState;
-        arrivedInitialState = false;
+        //no path exists!
+        if (currentNode != goalState){
+            searchResult.shortestPathRoute = "";
+            searchResult.shortestPathWeight = -1;
+            return searchResult;
+        }
+
+        bool arrivedInitialState = false;
         string currentDir;
-        currentNode = goalState;
         while (!arrivedInitialState)
         {
             searchResult.shortestPathWeight += currentNode->getCost();

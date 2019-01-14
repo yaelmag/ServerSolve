@@ -27,7 +27,7 @@ public:
         searchResult.developedVerticels = 0;
         searchResult.shortestPathRoute = "";
         searchResult.shortestPathWeight = 0;
-        State<T>* goalState, initialState, currentNode;
+        State<T>* goalState, *initialState, *currentNode;
         goalState = searchable->getGoalState();
         initialState = searchable->getInitialState();
 
@@ -76,53 +76,47 @@ public:
         }
 
         //no path exists!
-        if (current_node != goalState){
+        if (currentNode != goalState){
             searchResult.shortestPathRoute = "";
             searchResult.shortestPathWeight = -1;
             return searchResult;
         }
 
 
-        bool arrivedStart = false;
-
-        string currentDir;
-        while (!arrivedStart)
+        bool arrivedInitialState = false;
+        std::string currentDir;
+        while (!arrivedInitialState)
         {
-
-            searchResult.shortestPathWeight += current_node->weigth;
-            switch (current_node->commingFrom)
+            searchResult.shortestPathWeight += currentNode->getCost();
+            switch (currentNode->getCameFrom())
             {
                 case Up:
-                    current_node = current_node->top;
+                    currentNode = currentNode->getUpState();
                     currentDir = "Down, ";
                     break;
                 case Down:
-                    current_node = current_node->bottom;
+                    currentNode = currentNode->getDownState();
                     currentDir = "Up, ";
                     break;
                 case Left:
-                    current_node = current_node->left;
+                    currentNode = currentNode->getLeftState();
                     currentDir = "Right, ";
                     break;
                 case Right:
-                    current_node = current_node->right;
+                    currentNode = currentNode->getRightState();
                     currentDir = "Left, ";
                     break;
                 case Start:
-                    arrivedStart = true;
+                    arrivedInitialState = true;
                     break;
                 default:
                     throw "not valid scenario";
             }
-            if (!arrivedStart)
+            if (!arrivedInitialState)
                 searchResult.shortestPathRoute.insert(0, currentDir);
         }
-        searchResult.shortestPathRoute =
-                searchResult.shortestPathRoute.substr(0, searchResult.shortestPathRoute.length() - 2);
-
-
+        searchResult.shortestPathRoute = searchResult.shortestPathRoute.substr(0, searchResult.shortestPathRoute.length() - 2);
         return searchResult;
-
     }
 };
 
