@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+#include "EnumDirection.h"
 
 template <class T>
 class State {
@@ -20,12 +21,12 @@ State<T>* rightState;
 double cost;
 // the state we came from to this state (setter)
 /*State<T>* cameFrom;*/
-std::string cameFrom;
+Direction cameFrom;
 private:
     bool isMarked;
 public:
     State(T state, double cost) : state(state), cost(cost), upState(nullptr), downState(nullptr),
-    leftState(nullptr), rightState(nullptr), cameFrom(""), isMarked(false) {}
+    leftState(nullptr), rightState(nullptr), cameFrom(NotSet), isMarked(false) {}
 
     //State(T state, double cost) : state(state), cost(cost), isMarked(false), cameFrom(nullptr){}
 
@@ -49,18 +50,9 @@ public:
         this->isMarked = marked;
     }
 
-    void setCameFrom(const std::string &cameFrom) {
+    void setCameFrom(Direction cameFrom) {
         State::cameFrom = cameFrom;
     }
-
-    /*void setCameFrom(State<T>* cameFrom) {
-        this->cameFrom = cameFrom;
-    }*/
-
-   /* bool Equals(State<T> *s) // we overload Object's Equals method
-    {
-        return this->state ==s->getState();
-    }*/
 
     T getState() const {
         return state;
@@ -70,8 +62,12 @@ public:
         return cost;
     }
 
-    const std::string &getCameFrom() const {
+    Direction getCameFrom() const {
         return cameFrom;
+    }
+
+    bool getIsMarked() const {
+        return isMarked;
     }
 
     State<T> *getUpState() const {
@@ -106,10 +102,6 @@ public:
         }
         return allNeighbors;
     }
-
-    /*State<T> *getCameFrom() const {
-        return cameFrom;
-    }*/
 
     bool operator<(const State *other) const
     {

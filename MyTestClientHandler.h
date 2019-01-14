@@ -6,9 +6,6 @@
 #define PROJECT2_MYTESTCLIENTHANDLER_H
 
 #include "ClientHandler.h"
-#include "Solver.h"
-#include "CacheManager.h"
-
 
 class MyTestClientHandler : public ClientHandler {
     Solver<std::string, std::string>* solver;

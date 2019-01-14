@@ -6,6 +6,7 @@
 #define PROJECT2_CLIENTHANDLER_H
 
 #include "CacheManager.h"
+#include "Solver.h"
 
 class ClientHandler {
 public:
