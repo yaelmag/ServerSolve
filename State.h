@@ -7,23 +7,29 @@
 
 #include <string>
 #include <vector>
-#include "EnumDirection.h"
+
+enum Direction {
+    NotSet = 0,
+    Start = 1,
+    Left = 2,
+    Up = 3,
+    Right = 4,
+    Down = 5,
+};
+
 
 template <class T>
 class State {
+
 T state;
 State<T>* upState;
 State<T>* downState;
 State<T>* leftState;
 State<T>* rightState;
-
-// cost to reach this state (set by a setter)
 double cost;
-// the state we came from to this state (setter)
-/*State<T>* cameFrom;*/
 Direction cameFrom;
-private:
-    bool isMarked;
+bool isMarked;
+
 public:
     State(T state, double cost) : state(state), cost(cost), upState(nullptr), downState(nullptr),
     leftState(nullptr), rightState(nullptr), cameFrom(NotSet), isMarked(false) {}

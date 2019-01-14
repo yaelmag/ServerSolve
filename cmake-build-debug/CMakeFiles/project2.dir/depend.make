@@ -6,10 +6,10 @@ CMakeFiles/project2.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
 CMakeFiles/project2.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
 
 CMakeFiles/project2.dir/Main.cpp.o: ../BFS.h
+CMakeFiles/project2.dir/Main.cpp.o: ../BestFirstSearch.h
 CMakeFiles/project2.dir/Main.cpp.o: ../CacheManager.h
 CMakeFiles/project2.dir/Main.cpp.o: ../ClientHandler.h
 CMakeFiles/project2.dir/Main.cpp.o: ../DFS.h
-CMakeFiles/project2.dir/Main.cpp.o: ../EnumDirection.h
 CMakeFiles/project2.dir/Main.cpp.o: ../FileCacheManager.h
 CMakeFiles/project2.dir/Main.cpp.o: ../Main.cpp
 CMakeFiles/project2.dir/Main.cpp.o: ../MatrixSearchable.h
@@ -28,7 +28,6 @@ CMakeFiles/project2.dir/Main.cpp.o: ../TcpServer.h
 
 CMakeFiles/project2.dir/MyClientHandler.cpp.o: ../CacheManager.h
 CMakeFiles/project2.dir/MyClientHandler.cpp.o: ../ClientHandler.h
-CMakeFiles/project2.dir/MyClientHandler.cpp.o: ../EnumDirection.h
 CMakeFiles/project2.dir/MyClientHandler.cpp.o: ../MatrixSearchable.h
 CMakeFiles/project2.dir/MyClientHandler.cpp.o: ../MyClientHandler.cpp
 CMakeFiles/project2.dir/MyClientHandler.cpp.o: ../MyClientHandler.h
@@ -61,10 +60,10 @@ CMakeFiles/project2.dir/TcpServer.cpp.o: ../TcpServer.cpp
 CMakeFiles/project2.dir/TcpServer.cpp.o: ../TcpServer.h
 
 CMakeFiles/project2.dir/main.cpp.o: ../BFS.h
+CMakeFiles/project2.dir/main.cpp.o: ../BestFirstSearch.h
 CMakeFiles/project2.dir/main.cpp.o: ../CacheManager.h
 CMakeFiles/project2.dir/main.cpp.o: ../ClientHandler.h
 CMakeFiles/project2.dir/main.cpp.o: ../DFS.h
-CMakeFiles/project2.dir/main.cpp.o: ../EnumDirection.h
 CMakeFiles/project2.dir/main.cpp.o: ../FileCacheManager.h
 CMakeFiles/project2.dir/main.cpp.o: ../Main.cpp
 CMakeFiles/project2.dir/main.cpp.o: ../MatrixSearchable.h

@@ -17,6 +17,7 @@
 #include "Searcher.h"
 #include "BFS.h"
 #include "DFS.h"
+#include "BestFirstSearch.h"
 
 
 namespace boot {
@@ -24,7 +25,8 @@ namespace boot {
     class Main {
     public:
         int main(int port) {
-            Solver<Searchable<Point>*, SearchResult> *solver = new SearcherSolver<Point>(new BFS<Point>());
+            Solver<Searchable<Point>*, SearchResult> *solver = new SearcherSolver<Point>(new
+                    BestFirstSearch<Point>());
             CacheManager *cacheManager = new FileCacheManager();
             //ClientHandler *myTestClientHandler = new MyTestClientHandler(solver, cacheManager);
             ClientHandler *myTestClientHandler = new MyClientHandler(solver, cacheManager);
