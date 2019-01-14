@@ -9,9 +9,65 @@
 
 template <class T>
 class DFS : public Searcher <T> {
+    SearchResult searchResult;
+    State<T>* goalState;
 public:
     SearchResult search(Searchable<T> *searchable) override {
+        this->searchResult.developedVerticels = 0;
+        this->searchResult.shortestPathRoute = "";
+        this->searchResult.shortestPathWeight = 0;
 
+        goalState = searchable->getGoalState();
+        State<T>* initialState = searchable->getInitialState();
+        recursiveSearch(initialState);
+
+        this->searchResult.shortestPathRoute = this->searchResult.shortestPathRoute.substr(0,
+                searchResult.shortestPathRoute.length() - 2);
+        return this->searchResult;
+    }
+
+    bool recursiveSearch(State<T>* currentState) {
+        if (currentState == nullptr || currentState->getIsMarked()) {
+            return false;
+        }
+
+        this->searchResult.shortestPathWeight += currentState->getCost();
+
+        searchResult.developedVerticels++;
+
+        if (currentState == goalState) {
+            return true;
+        }
+
+        currentState->setIsMarked(true);
+
+        if (currentState->getLeftState() != nullptr && recursiveSearch(currentState->getLeftState()))
+        {
+            this->searchResult.shortestPathRoute.insert(0, "Left, ");
+            return true;
+        }
+
+        if (currentState->getUpState() != nullptr && recursiveSearch(currentState->getUpState()))
+        {
+            this->searchResult.shortestPathRoute.insert(0, "Up, ");
+            return true;
+        }
+
+        if (currentState->getRightState() != nullptr && recursiveSearch(currentState->getRightState()))
+        {
+            this->searchResult.shortestPathRoute.insert(0, "Right, ");
+            return true;
+        }
+
+        if (currentState->getDownState() != nullptr && recursiveSearch(currentState->getDownState()))
+        {
+            this->searchResult.shortestPathRoute.insert(0, "Down, ");
+            return true;
+        }
+
+        this->searchResult.shortestPathWeight -= currentState->getCost();
+
+        return false;
     }
 };
 

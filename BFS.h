@@ -25,7 +25,7 @@ public:
         goalState = searchable->getGoalState();
         std::queue<State<T>*> q;
         std::vector<State<T>*> neighbors;
-        initialState->setCameFrom("Start");
+        initialState->setCameFrom(Start);
         q.push(initialState);
 
         while (!q.empty())
@@ -40,26 +40,26 @@ public:
             }
 
             //upState
-            if (currentNode->getUpState() != nullptr && currentNode->getUpState()->getCameFrom() == "") {
-                currentNode->getUpState()->setCameFrom("Down");
+            if (currentNode->getUpState() != nullptr && currentNode->getUpState()->getCameFrom() == NotSet) {
+                currentNode->getUpState()->setCameFrom(Down);
                 q.push(currentNode->getUpState());
 
             }
             //downState
-            if (currentNode->getDownState() != nullptr && currentNode->getDownState()->getCameFrom() == "") {
-                currentNode->getDownState()->setCameFrom("Up");
+            if (currentNode->getDownState() != nullptr && currentNode->getDownState()->getCameFrom() == NotSet) {
+                currentNode->getDownState()->setCameFrom(Up);
                 q.push(currentNode->getDownState());
 
             }
             //leftState
-            if (currentNode->getLeftState() != nullptr && currentNode->getLeftState()->getCameFrom() == "") {
-                currentNode->getLeftState()->setCameFrom("Right");
+            if (currentNode->getLeftState() != nullptr && currentNode->getLeftState()->getCameFrom() == NotSet) {
+                currentNode->getLeftState()->setCameFrom(Right);
                 q.push(currentNode->getLeftState());
 
             }
             //rightState
-            if (currentNode->getRightState() != nullptr && currentNode->getRightState()->getCameFrom() == "") {
-                currentNode->getRightState()->setCameFrom("Left");
+            if (currentNode->getRightState() != nullptr && currentNode->getRightState()->getCameFrom() == NotSet) {
+                currentNode->getRightState()->setCameFrom(Left);
                 q.push(currentNode->getRightState());
 
             }
@@ -75,23 +75,23 @@ public:
             searchResult.shortestPathWeight += currentNode->getCost();
             switch (currentNode->getCameFrom())
             {
-                case "Up":
+                case Up:
                     currentNode = currentNode->getUpState();
                     currentDir = "Down, ";
                     break;
-                case "Down":
+                case Down:
                     currentNode = currentNode->getDownState();
                     currentDir = "Up, ";
                     break;
-                case "Left":
+                case Left:
                     currentNode = currentNode->getLeftState();
                     currentDir = "Right, ";
                     break;
-                case "Right":
+                case Right:
                     currentNode = currentNode->getRightState();
                     currentDir = "Left, ";
                     break;
-                case "Start":
+                case Start:
                     arrivedInitialState = true;
                     break;
                 default:
