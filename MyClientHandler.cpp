@@ -7,21 +7,26 @@
 #include "TcpServer.h"
 #include "MatrixSearchable.h"
 
-
 void MyClientHandler::handleClient(int cliSocket) {
+    SearchResult solution;
     string line;
     vector<string> s, e;
+    vector<string> allInfo;
     int row;
     row = 0;
     line = server_side::TcpServer::readLine(cliSocket);
 
     // read all the matrix
     while (line != "end") {
-        this->addLine(line, row);
+        allInfo.push_back(line);
         line = server_side::TcpServer::readLine(cliSocket);
-        row++;
+        /*this->addLine(line, row);
+        line = server_side::TcpServer::readLine(cliSocket);
+        row++;*/
     }
 
+    MatrixSearchable<Point>* m = this->createMatrix(allInfo);
+  /*
     // read the start point
     line = server_side::TcpServer::readLine(cliSocket);
     s = split(line, ',');
@@ -40,12 +45,42 @@ void MyClientHandler::handleClient(int cliSocket) {
     }
     State<Point> *end1 = this->matrix[endP.getRow()][endP.getCol()];
 
-    MatrixSearchable<Point>* m = new MatrixSearchable <Point>(this->matrix, start1, end1);
+    MatrixSearchable<Point>* m = new MatrixSearchable <Point>(this->matrix, start1, end1);*/
+    solution = this->solver->solve(m);
     m->printMatrix();
-    m->getAllPossibleStates(this->matrix[0][0]);
-    m->getAllPossibleStates(this->matrix[1][1]);
-    m->getAllPossibleStates(this->matrix[2][2]);
+    server_side::TcpServer::writeToClient(cliSocket, solution.shortestPathRoute);
+    server_side::TcpServer::writeToClient(cliSocket, "\n");
+    cout<<solution.developedVerticels<<endl;
+    cout<<solution.shortestPathWeight<<endl;
 }
+
+MatrixSearchable<Point>* MyClientHandler::createMatrix(vector<string> allInfo) {
+    vector<string> s, e;
+    unsigned long length = allInfo.size();
+    for (unsigned long i = 0; i < length - 2; i++) {
+        this->addLine(allInfo[i], i);
+    }
+
+    //create the start point
+    s = split(allInfo[length - 2], ',');
+    Point startP = Point(stoi(s[0]), stoi(s[1]));
+    if (!this->checkValidOfPoint(startP)) {
+        __throw_invalid_argument("The point is invalid, there isn't an exist state in this place");
+    }
+    State<Point> *start1 = this->matrix[startP.getRow()][startP.getCol()];
+
+    //create the end point
+    e = split(allInfo[length - 1], ',');
+    Point endP = Point(stoi(e[0]), stoi(e[1]));
+    if (!this->checkValidOfPoint(endP)) {
+        __throw_invalid_argument("The point is invalid, there isn't an exist state in this place");
+    }
+    State<Point> *end1 = this->matrix[endP.getRow()][endP.getCol()];
+
+    MatrixSearchable<Point>* m = new MatrixSearchable <Point>(this->matrix, start1, end1);
+    return m;
+}
+
 
 void MyClientHandler::addLine(std::string line, int row) {
     vector<string> allNums = split(line, ',');
@@ -89,3 +124,4 @@ bool MyClientHandler::checkValidOfPoint(Point p) {
     }
     return true;
 }
+

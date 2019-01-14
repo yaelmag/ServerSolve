@@ -12,14 +12,19 @@
 #include <string>
 #include "TcpServer.h"
 #include "MatrixSearchable.h"
-using namespace std;
 
+using namespace std;
 class MyClientHandler : public ClientHandler {
     vector<vector<State<Point>*>> matrix;
+    Solver<Searchable<Point>*, SearchResult> *solver;
     CacheManager* cache;
 public:
+    MyClientHandler(Solver<Searchable<Point> *, SearchResult> *solver, CacheManager *cache)
+            : solver(solver), cache(cache) {}
+
     MyClientHandler() = default;
     void handleClient(int cliSocket) override;
+    MatrixSearchable<Point>* createMatrix(vector<string> allInfo);
     void addLine(std::string line, int row);
     vector<string> split(string info, char divide);
     bool checkValidOfPoint(Point p);
