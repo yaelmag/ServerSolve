@@ -16,6 +16,9 @@ public:
     SearchResult solve(Searchable<T> *problem) override {
         return searcher->search(problem);
     }
+    ~SearcherSolver() override {
+        delete(searcher);
+    }
 };
 
 #endif //PROJECT2_MATRIXSOLVER_H

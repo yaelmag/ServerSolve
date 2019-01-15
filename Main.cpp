@@ -18,25 +18,25 @@
 #include "BFS.h"
 #include "DFS.h"
 #include "BestFirstSearch.h"
+#include "Astar.h"
+#include "MyParallelServer.h"
 
 
 namespace boot {
-// the main is over after 3 timeout or after the sleep seconds.
     class Main {
     public:
         int main(int port) {
-            BestFirstSearch<Point>* bestFirstSearch = new BestFirstSearch<Point>();
-            Solver<Searchable<Point>*, SearchResult> *solver = new SearcherSolver<Point>(bestFirstSearch);
+            Solver<Searchable<Point>*, SearchResult> *solver = new SearcherSolver<Point>(new Astar<Point>());
             CacheManager *cacheManager = new FileCacheManager();
-            ClientHandler *myTestClientHandler = new MyClientHandler(solver, cacheManager);
-            server_side::MySerialServer mySerialServer = server_side::MySerialServer();
-            mySerialServer.open(port, myTestClientHandler);
+            ClientHandler *ClientHandler = new MyClientHandler(solver, cacheManager);
+            server_side::MyParallelServer* parallelServer = new server_side::MyParallelServer();
+            parallelServer->open(port, ClientHandler);
             std::this_thread::sleep_for(std::chrono::milliseconds(10000));
-            mySerialServer.stop();
-            delete(bestFirstSearch);
-            delete (solver);
-            delete (cacheManager);
-            delete (myTestClientHandler);
+            parallelServer->stop();
+            delete(solver);
+            delete(cacheManager);
+            delete(ClientHandler);
+            delete(parallelServer);
             return 0;
         }
     };
