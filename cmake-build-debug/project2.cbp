@@ -120,6 +120,12 @@
 		<Unit filename="/home/adi/CLionProjects/project2/MyClientHandler.h">
 			<Option target="project2"/>
 		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/MyParallelServer.cpp">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/MyParallelServer.h">
+			<Option target="project2"/>
+		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/MySerialServer.cpp">
 			<Option target="project2"/>
 		</Unit>
@@ -133,6 +139,9 @@
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/Point.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/PriorityQueue.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/ReverserSolver.cpp">

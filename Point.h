@@ -31,6 +31,27 @@ public:
     int getCol() const {
         return col;
     }
+
+    /**
+     * override operator <
+     * @param other - a point
+     * @return
+     */
+    bool operator<(const Point other) const {
+        if (this->row < other.getRow()) {
+            return true;
+        }
+        if (this->row > other.getRow()) {
+            return false;
+        }
+        if (this->col < other.getCol()) {
+            return true;
+        }
+        if (this->col > other.getCol()) {
+            return false;
+        }
+        return false;
+    }
 };
 
 #endif //PROJECT2_POINT_H

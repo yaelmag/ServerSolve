@@ -12,17 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b38b70-ec25-48cf-ab1c-2e98fc4b7b1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MyParallelServer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyParallelServer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PriorityQueue.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/BFS.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestFirstSearch.h" beforeDir="false" afterPath="$PROJECT_DIR$/BestFirstSearch.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/DFS.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Astar.h" beforeDir="false" afterPath="$PROJECT_DIR$/Astar.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileCacheManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/FileCacheManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatrixSearchable.h" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixSearchable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileCacheManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/FileCacheManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyClientHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MyClientHandler.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Point.h" beforeDir="false" afterPath="$PROJECT_DIR$/Point.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/State.h" beforeDir="false" afterPath="$PROJECT_DIR$/State.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project2.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project2.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project2.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project2.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/project2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/project2.cbp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,35 +55,36 @@
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="124" />
-          <entry key="h" value="182" />
+          <entry key="cpp" value="133" />
+          <entry key="h" value="204" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="4" />
-          <entry key="ObjectiveC" value="306" />
+          <entry key="ObjectiveC" value="337" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="5932" />
-          <entry key="h" value="6907" />
+          <entry key="cpp" value="5944" />
+          <entry key="h" value="7117" />
           <entry key="txt" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="10" />
-          <entry key="Doxygen file" value="41" />
-          <entry key="ObjectiveC" value="12798" />
+          <entry key="Doxygen file" value="43" />
+          <entry key="ObjectiveC" value="13018" />
           <entry key="PLAIN_TEXT" value="61" />
         </counts>
       </usages-collector>
@@ -82,11 +92,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TcpServer.cpp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyClientHandler.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#38#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FileCacheManager.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="36" column="71" lean-forward="true" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
+              <folding>
+                <element signature="e#160#359#0" />
+                <element signature="e#160#462#0" />
+                <element signature="e#464#620#0" />
+                <element signature="e#464#799#0" />
+                <element signature="e#801#904#0" />
+                <element signature="e#1134#1250#0" />
+                <element signature="e#1134#1664#0" />
+                <element signature="e#1666#1770#0" />
+                <element signature="e#1666#2619#0" />
+                <element signature="e#2621#2836#0" />
+                <element signature="e#2621#3096#0" />
+                <element signature="e#3098#3172#0" />
+                <element signature="e#3098#3249#0" />
+                <element signature="e#3251#3334#0" />
+                <element signature="e#3251#3410#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,7 +157,6 @@
         <option value="$PROJECT_DIR$/Place.h" />
         <option value="$PROJECT_DIR$/MatrixSearchable.cpp" />
         <option value="$PROJECT_DIR$/CacheManager.h" />
-        <option value="$PROJECT_DIR$/FileCacheManager.h" />
         <option value="$PROJECT_DIR$/MyTestClientHandler.cpp" />
         <option value="$PROJECT_DIR$/TcpServer.cpp" />
         <option value="$PROJECT_DIR$/ReverserSolver.h" />
@@ -127,7 +165,6 @@
         <option value="$PROJECT_DIR$/Searcher.h" />
         <option value="$PROJECT_DIR$/MatrixSolver.h" />
         <option value="$PROJECT_DIR$/SearcherSolver.cpp" />
-        <option value="$PROJECT_DIR$/Astar.h" />
         <option value="$PROJECT_DIR$/ClientHandler.h" />
         <option value="$PROJECT_DIR$/MyTestClientHandler.h" />
         <option value="$PROJECT_DIR$/Searchable.h" />
@@ -139,13 +176,18 @@
         <option value="$PROJECT_DIR$/BFS.h" />
         <option value="$PROJECT_DIR$/DFS.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/FileCacheManager.cpp" />
-        <option value="$PROJECT_DIR$/MyClientHandler.cpp" />
         <option value="$PROJECT_DIR$/SearcherSolver.h" />
         <option value="$PROJECT_DIR$/Main.cpp" />
-        <option value="$PROJECT_DIR$/Point.h" />
         <option value="$PROJECT_DIR$/MatrixSearchable.h" />
+        <option value="$PROJECT_DIR$/PriorityQueue.h" />
+        <option value="$PROJECT_DIR$/Point.h" />
+        <option value="$PROJECT_DIR$/Astar.h" />
+        <option value="$PROJECT_DIR$/MyParallelServer.h" />
+        <option value="$PROJECT_DIR$/MyParallelServer.cpp" />
         <option value="$PROJECT_DIR$/State.h" />
+        <option value="$PROJECT_DIR$/MyClientHandler.cpp" />
+        <option value="$PROJECT_DIR$/FileCacheManager.h" />
+        <option value="$PROJECT_DIR$/FileCacheManager.cpp" />
       </list>
     </option>
   </component>
@@ -241,6 +283,7 @@
       <workItem from="1547404852797" duration="8160000" />
       <workItem from="1547414341954" duration="9694000" />
       <workItem from="1547469642457" duration="27171000" />
+      <workItem from="1547565871259" duration="5040000" />
     </task>
     <task id="LOCAL-00001" summary="hi there">
       <created>1546893535385</created>
@@ -386,7 +429,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155891000" />
+    <option name="totallyTimeSpent" value="160931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,7 +444,7 @@
     <frame x="64" y="-11" width="1409" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19617929" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1991183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -460,10 +503,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update :)" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ClientHandler.cpp" />
-    <entry file="file://$PROJECT_DIR$/cacheManager.cpp" />
-    <entry file="file://$PROJECT_DIR$/cacheManager.h" />
-    <entry file="file://$PROJECT_DIR$/CacheManager.cpp" />
     <entry file="file://$PROJECT_DIR$/Solver.cpp" />
     <entry file="file:///usr/include/c++/5/bits/stl_pair.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -508,16 +547,6 @@
     <entry file="file://$PROJECT_DIR$/BFS.cpp" />
     <entry file="file://$PROJECT_DIR$/MatrixSearchable.cpp" />
     <entry file="file://$PROJECT_DIR$/BestFirstSearch.cpp" />
-    <entry file="file://$PROJECT_DIR$/Astar.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#121#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReverserSolver.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -525,13 +554,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EnumDirection.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="8" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/EnumDirection.h" />
     <entry file="file://$PROJECT_DIR$/MyTestClientHandler.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -546,45 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BestFirstSearch.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="81" column="15" lean-forward="true" selection-start-line="81" selection-start-column="15" selection-end-line="81" selection-end-column="15" />
-          <folding>
-            <element signature="e#109#130#0" expanded="true" />
-            <element signature="e#158#167#0" expanded="true" />
-            <element signature="e#328#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CacheManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClientHandler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#104#129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BFS.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="e#85#106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DFS.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -595,53 +579,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileCacheManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#111#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cacheFile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FileCacheManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="96" column="16" lean-forward="true" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
-          <folding>
-            <element signature="e#1666#1770#0" />
-            <element signature="e#3251#3334#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyClientHandler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
-          <folding>
-            <element signature="e#38#66#0" expanded="true" />
-            <element signature="e#139#1373#0" />
-            <element signature="e#1375#1527#0" />
-            <element signature="e#1375#2619#0" />
-            <element signature="e#2621#2733#0" />
-            <element signature="e#2621#3233#0" />
-            <element signature="e#3235#3450#0" />
-            <element signature="e#3235#3719#0" />
-            <element signature="e#3721#3872#0" />
-            <element signature="e#3721#4250#0" />
-            <element signature="e#4252#4328#0" />
-            <element signature="e#4252#4767#0" />
-            <element signature="e#4769#4814#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,27 +603,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyClientHandler.h">
+    <entry file="file://$PROJECT_DIR$/MatrixSearchable.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="205">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding>
-            <element signature="e#109#135#0" expanded="true" />
+            <element signature="e#186#195#0" expanded="true" />
+            <element signature="e#1771#1830#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TcpServer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestFirstSearch.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="81" column="15" selection-start-line="81" selection-start-column="15" selection-end-line="81" selection-end-column="15" />
+          <folding>
+            <element signature="e#109#130#0" expanded="true" />
+            <element signature="e#158#167#0" expanded="true" />
+            <element signature="e#328#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TcpServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PriorityQueue.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BFS.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="e#85#106#0" expanded="true" />
+            <element signature="e#200#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PriorityQueue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#250#283#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Point.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+        <state relative-caret-position="395">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
           <folding>
-            <element signature="e#140#197#0" />
-            <element signature="e#140#221#0" />
-            <element signature="e#345#380#0" />
-            <element signature="e#227#273#0" />
             <element signature="e#482#563#0" />
-            <element signature="e#279#325#0" />
+            <element signature="e#620#676#0" />
+            <element signature="e#620#999#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientHandler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#104#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CacheManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Astar.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#138#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyParallelServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#38#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyParallelServer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#111#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySerialServer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#106#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySerialServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding>
+            <element signature="e#38#65#0" expanded="true" />
+            <element signature="e#90#209#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyClientHandler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="e#109#135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -715,27 +782,7 @@
           <folding>
             <element signature="e#103#122#0" expanded="true" />
             <element signature="e#155#164#0" expanded="true" />
-            <element signature="e#339#440#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySerialServer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="e#38#65#0" expanded="true" />
-            <element signature="e#90#209#0" />
-            <element signature="e#403#1183#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySerialServer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -756,75 +803,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MatrixSearchable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-          <folding>
-            <element signature="e#186#195#0" expanded="true" />
-            <element signature="e#1771#1830#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/State.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="176" column="20" selection-start-line="176" selection-start-column="20" selection-end-line="176" selection-end-column="20" />
+        <state relative-caret-position="285">
+          <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
           <folding>
             <element signature="e#89#106#0" expanded="true" />
             <element signature="e#126#166#0" />
-            <element signature="e#126#230#1" />
-            <element signature="e#421#481#0" />
-            <element signature="e#688#730#0" />
-            <element signature="e#690#766#0" />
-            <element signature="e#841#913#0" />
-            <element signature="e#772#856#0" />
-            <element signature="e#1013#1085#0" />
-            <element signature="e#862#946#0" />
-            <element signature="e#1185#1257#0" />
-            <element signature="e#952#1040#0" />
-            <element signature="e#1368#1409#0" />
-            <element signature="e#1046#1116#0" />
-            <element signature="e#1521#1606#0" />
-            <element signature="e#1521#1691#0" />
-            <element signature="e#1731#1770#0" />
-            <element signature="e#1697#1745#0" />
-            <element signature="e#1846#1881#0" />
-            <element signature="e#1751#1802#0" />
-            <element signature="e#1988#2040#0" />
-            <element signature="e#1808#1870#0" />
-            <element signature="e#2206#2241#0" />
-            <element signature="e#1876#1933#0" />
-            <element signature="e#2331#2370#0" />
-            <element signature="e#1939#1999#0" />
-            <element signature="e#2462#2514#0" />
-            <element signature="e#2005#2069#0" />
-            <element signature="e#2601#2639#0" />
-            <element signature="e#2075#2139#0" />
-            <element signature="e#2741#2808#0" />
-            <element signature="e#2741#2879#0" />
-            <element signature="e#2884#2936#0" />
-            <element signature="e#2885#3425#0" />
-            <element signature="e#3532#3588#0" />
-            <element signature="e#3431#3529#0" />
-            <element signature="e#3783#3829#0" />
-            <element signature="e#3535#3656#1" />
+            <element signature="e#3771#3836#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TcpServer.h">
+    <entry file="file://$PROJECT_DIR$/MyClientHandler.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#38#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TcpServer.cpp">
+    <entry file="file://$PROJECT_DIR$/FileCacheManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        <state relative-caret-position="39">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileCacheManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="36" column="71" lean-forward="true" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
+          <folding>
+            <element signature="e#160#359#0" />
+            <element signature="e#160#462#0" />
+            <element signature="e#464#620#0" />
+            <element signature="e#464#799#0" />
+            <element signature="e#801#904#0" />
+            <element signature="e#1134#1250#0" />
+            <element signature="e#1134#1664#0" />
+            <element signature="e#1666#1770#0" />
+            <element signature="e#1666#2619#0" />
+            <element signature="e#2621#2836#0" />
+            <element signature="e#2621#3096#0" />
+            <element signature="e#3098#3172#0" />
+            <element signature="e#3098#3249#0" />
+            <element signature="e#3251#3334#0" />
+            <element signature="e#3251#3410#0" />
+          </folding>
         </state>
       </provider>
     </entry>

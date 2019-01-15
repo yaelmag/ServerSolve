@@ -3,9 +3,9 @@
 //
 
 #include "MyClientHandler.h"
-#include <string>
 #include "TcpServer.h"
 #include "MatrixSearchable.h"
+#include <string>
 
 void MyClientHandler::handleClient(int cliSocket) {
     SearchResult searchResult;
@@ -33,6 +33,7 @@ void MyClientHandler::handleClient(int cliSocket) {
         solution = searchResult.shortestPathRoute;
         cache->storeSolution(wholeProblem, solution);
     }
+
     // write to the client the solution
     server_side::TcpServer::writeToClient(cliSocket, solution);
     server_side::TcpServer::writeToClient(cliSocket, "\n");

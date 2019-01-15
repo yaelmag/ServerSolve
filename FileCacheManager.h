@@ -8,12 +8,14 @@
 
 #include <map>
 #include <vector>
+#include <mutex>
 #include "CacheManager.h"
 
 using std::string;
 class FileCacheManager : public CacheManager {
     std::map<string, string> generalCache;
     std::map<string, string> updatedCache;
+    std::mutex mut;
 public:
     FileCacheManager() = default;
 

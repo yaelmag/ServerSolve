@@ -145,28 +145,37 @@ public:
      */
     std::vector<State<T>*> getAllNeighbors() {
         std::vector<State<T>*> allNeighbors;
-        if (this->upState != nullptr) {
+        if (this->upState != NULL) {
             allNeighbors.push_back(this->upState);
         }
-        if (this->downState != nullptr) {
+        if (this->downState != NULL) {
             allNeighbors.push_back(this->downState);
         }
-        if (this->leftState != nullptr) {
+        if (this->leftState != NULL) {
             allNeighbors.push_back(this->leftState);
         }
-        if (this->rightState != nullptr) {
+        if (this->rightState != NULL) {
             allNeighbors.push_back(this->rightState);
         }
         return allNeighbors;
     }
 
     /**
-     * overload operator <
+     * override operator <
      * @param other - a state
      * @return - true if 'this' state cost is smaller than 'other' state cost
      */
     bool operator<(const State *other) const {
         return this->cost < other->getCost();
+    }
+
+    /**
+     * override operator ==
+     * @param other - a state
+     * @return - true if the two states are equals and that their cost is equal, else return false
+     */
+    bool operator==(const State *other) const {
+        return (this->getState() == other->getState() && this->cost == other->cost);
     }
 
 };

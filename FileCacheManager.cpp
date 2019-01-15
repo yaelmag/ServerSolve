@@ -44,6 +44,7 @@ void FileCacheManager::storeSolution(string problem, string solution) {
  * @param fileName - the cache file name
  */
 void FileCacheManager::writeToFile(string fileName) {
+    mut.lock();
     std::ofstream f(fileName, std::ios::out | std::ios::app | std::ios::ate);
     if (f.is_open()) {
         for (const auto &problem: updatedCache) {
@@ -56,6 +57,7 @@ void FileCacheManager::writeToFile(string fileName) {
     } else {
         std::cout << "unable to open file";
     }
+    mut.unlock();
 }
 
 /**
@@ -63,6 +65,7 @@ void FileCacheManager::writeToFile(string fileName) {
  * @param fileName - the cache file name
  */
 void FileCacheManager::loadFromFile(std::string fileName) {
+    mut.lock();
     string line, solution, problem = "";
     std::ifstream file(fileName, std::ios::in);
     std::vector<string> splittedLine;
@@ -84,6 +87,7 @@ void FileCacheManager::loadFromFile(std::string fileName) {
     } else {
         std::cout << "unable to open file";
     }
+    mut.unlock();
 }
 
 /**
