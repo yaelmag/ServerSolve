@@ -24,13 +24,14 @@ public:
     SearchResult search(Searchable<T> *searchable) override {
         SearchResult searchResult;
 
+        // initialize the search result
         searchResult.developedVerticels = 0;
         searchResult.shortestPathRoute = "";
         searchResult.shortestPathWeight = 0;
+
         State<T>* goalState, *initialState, *currentNode;
         goalState = searchable->getGoalState();
         initialState = searchable->getInitialState();
-
         std::priority_queue<State<T>*, std::vector<State<T>*>, Compare<T>> pq;
 
         searchable->getInitialState()->setCameFrom(Start);
@@ -46,7 +47,6 @@ public:
             {
                 break;
             }
-
 
             //upState
             if (currentNode->getUpState() != NULL && currentNode->getUpState()->getCameFrom() == NotSet) {

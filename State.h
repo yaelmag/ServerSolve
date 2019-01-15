@@ -8,6 +8,9 @@
 #include <string>
 #include <vector>
 
+/**
+ * enum that represent direction
+ */
 enum Direction {
     NotSet = 0,
     Start = 1,
@@ -31,67 +34,115 @@ Direction cameFrom;
 bool isMarked;
 
 public:
+    /**
+     * constructor
+     * @param state - the state
+     * @param cost - the cost
+     */
     State(T state, double cost) : state(state), cost(cost), upState(NULL), downState(NULL),
     leftState(NULL), rightState(NULL), cameFrom(NotSet), isMarked(false) {}
-
-    //State(T state, double cost) : state(state), cost(cost), isMarked(false), cameFrom(nullptr){}
-
+    /**
+     * set the up state
+     * @param upState - the up state
+     */
     void setUpState(State<T> *upState) {
         State::upState = upState;
     }
-
+    /**
+     * set the down state
+     * @param downState - the down state
+     */
     void setDownState(State<T> *downState) {
         State::downState = downState;
     }
-
+    /**
+     * set the left state
+     * @param leftState - the left state
+     */
     void setLeftState(State<T> *leftState) {
         State::leftState = leftState;
     }
-
+    /**
+     * set the right state
+     * @param rightState - the right state
+     */
     void setRightState(State<T> *rightState) {
         State::rightState = rightState;
     }
-
+    /**
+     * set isMarked
+     * @param marked - a boolean variable
+     */
     void setIsMarked(bool marked) {
         this->isMarked = marked;
     }
-
+    /**
+     * set the direction that the state came from
+     * @param cameFrom - the direction the state came from
+     */
     void setCameFrom(Direction cameFrom) {
         State::cameFrom = cameFrom;
     }
-
+    /**
+     * get the state
+     * @return the state
+     */
     T getState() const {
         return state;
     }
-
+    /**
+     * get the cost of the state
+     * @return the cost of the state
+     */
     double getCost() const {
         return cost;
     }
-
+    /**
+     * get the direction the state came from
+     * @return the direction the state came from
+     */
     Direction getCameFrom() const {
         return cameFrom;
     }
-
+    /**
+     * return isMarked
+     * @return isMarked
+     */
     bool getIsMarked() const {
         return isMarked;
     }
-
+    /**
+     * get the upState
+     * @return the upState
+     */
     State<T> *getUpState() const {
         return upState;
     }
-
+    /**
+     * get the downState
+     * @return the downState
+     */
     State<T> *getDownState() const {
         return downState;
     }
-
+    /**
+     * get the leftState
+     * @return the leftState
+     */
     State<T> *getLeftState() const {
         return leftState;
     }
-
+    /**
+     * get the rightState
+     * @return the rightState
+     */
     State<T> *getRightState() const {
         return rightState;
     }
-
+    /**
+     * get all the neighbors of the state
+     * @return all the neighbors of the state
+     */
     std::vector<State<T>*> getAllNeighbors() {
         std::vector<State<T>*> allNeighbors;
         if (this->upState != nullptr) {
@@ -109,13 +160,20 @@ public:
         return allNeighbors;
     }
 
-    bool operator<(const State *other) const
-    {
+    /**
+     * overload operator <
+     * @param other - a state
+     * @return - true if 'this' state cost is smaller than 'other' state cost
+     */
+    bool operator<(const State *other) const {
         return this->cost < other->getCost();
     }
 
 };
 
+/**
+ * struct that represent the search result
+ */
 struct SearchResult {
 
     std::string shortestPathRoute;

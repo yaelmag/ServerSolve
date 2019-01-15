@@ -13,11 +13,17 @@ using namespace std;
 
 template <class T>
 class MatrixSearchable : public Searchable <T> {
-    vector<vector<State<Point>*>> matrix;
+    vector<vector<State<T>*>> matrix;
     State<T>* start;
     State<T>* end;
 
 public:
+    /**
+     * constructor
+     * @param matrix - a matrix
+     * @param start - initial state
+     * @param end - goal state
+     */
     MatrixSearchable(const vector<vector<State<Point> *>> &matrix, State<T> *start,
                      State<T> *end) : matrix(matrix), start(start), end(end) {
         unsigned long numRows, numCols, row, col;
@@ -48,63 +54,36 @@ public:
 
     }
 
+    /**
+     * get the matrix
+     * @return the matrix
+     */
+    const vector<vector<State<T> *>> &getMatrix() const {
+        return matrix;
+    }
+
+    /**
+     * get the initial state
+     * @return the initial state
+     */
     State<T>* getInitialState() override {
        return this->start;
     }
-
+    /**
+     * get the goal state
+     * @return the goal state
+     */
     State<T>* getGoalState() override {
         return this->end;
     }
 
+    /**
+     * get all the possible next states from a specific state
+     * @param s - a state
+     * @return all the possible next states from a specific state
+     */
     vector<State<T>*> getAllPossibleStates(State<T>* s) override {
         return s->getAllNeighbors();
-        /*std::vector<State<Point>*> allStates;
-        unsigned long numRows, numCols, row, col;
-        numRows = matrix.size();
-        numCols = matrix[0].size();
-
-        row = s->getState().getRow();
-        col = s->getState().getCol();
-
-        if (row != 0 && this->matrix[row - 1][col]->getCost() != -1) {
-            allStates.push_back(this->matrix[row - 1][col]);
-        }
-        if (row != numRows - 1 && this->matrix[row + 1][col]->getCost() != -1) {
-            allStates.push_back(this->matrix[row + 1][col]);
-        }
-        if (col != 0 && this->matrix[row][col - 1]->getCost() != -1) {
-            allStates.push_back(this->matrix[row][col - 1]);
-        }
-        if (col != numCols - 1 && this->matrix[row][col + 1]->getCost() != -1) {
-            allStates.push_back(this->matrix[row][col + 1]);
-        }
-        printStates(allStates && this->matrix[row - 1][col]->getCost() != -1);
-        return allStates;*/
-    }
-
-    void printStates (vector<State<T>*> states) {
-
-        double cost;
-        for (unsigned long i = 0; i < states.size(); i++) {
-            cost = states[i]->getCost();
-            cout<<cost<<",";
-        }
-        cout<<endl;
-    }
-
-    void printMatrix() {
-        unsigned long numRows, numCols;
-        numRows = matrix.size();
-        numCols = matrix[0].size();
-        double cost;
-
-        for (unsigned long i = 0; i < numRows; i++) {
-            for (unsigned long j = 0; j < numCols; j++) {
-                cost = this->matrix[i][j]->getCost();
-                std::cout<<cost<<",";
-            }
-            std::cout<<std::endl;
-        }
     }
 };
 

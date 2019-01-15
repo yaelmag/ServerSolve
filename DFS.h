@@ -13,11 +13,12 @@ class DFS : public Searcher <T> {
     State<T>* goalState;
 public:
     SearchResult search(Searchable<T> *searchable) override {
+        // initialize the search result
         this->searchResult.developedVerticels = 0;
         this->searchResult.shortestPathRoute = "";
         this->searchResult.shortestPathWeight = 0;
 
-        goalState = searchable->getGoalState();
+        this->goalState = searchable->getGoalState();
         State<T>* initialState = searchable->getInitialState();
         recursiveSearch(initialState);
 
@@ -27,7 +28,7 @@ public:
     }
 
     bool recursiveSearch(State<T>* currentState) {
-        if (currentState == nullptr || currentState->getIsMarked()) {
+        if (currentState == NULL || currentState->getIsMarked()) {
             return false;
         }
 
@@ -35,6 +36,7 @@ public:
 
         searchResult.developedVerticels++;
 
+        //finished
         if (currentState == goalState) {
             return true;
         }
@@ -70,6 +72,5 @@ public:
         return false;
     }
 };
-
 
 #endif //PROJECT2_DFS_H

@@ -16,15 +16,17 @@ class BFS : public Searcher<T> {
 public:
     SearchResult search(Searchable<T> *searchable) override {
         SearchResult searchResult;
+        // initialize the search result
         searchResult.developedVerticels = 0;
         searchResult.shortestPathRoute = "";
         searchResult.shortestPathWeight = 0;
 
         State<T> *initialState, *goalState, *currentNode;
+        std::vector<State<T>*> neighbors;
+        std::queue<State<T>*> q;
+
         initialState = searchable->getInitialState();
         goalState = searchable->getGoalState();
-        std::queue<State<T>*> q;
-        std::vector<State<T>*> neighbors;
         initialState->setCameFrom(Start);
         q.push(initialState);
 
