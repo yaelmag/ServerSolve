@@ -8,17 +8,16 @@
 #include "MatrixSearchable.h"
 
 void MyClientHandler::handleClient(int cliSocket) {
-    SearchResult solution;
-    string line;
+    SearchResult searchResult;
+    string line, wholeProblem, solution;
     vector<string> s, e;
     vector<string> allInfo;
-    int row;
-    row = 0;
     line = server_side::TcpServer::readLine(cliSocket);
 
     // read all the matrix
     while (line != "end") {
         allInfo.push_back(line);
+        wholeProblem += (line + "\n");
         line = server_side::TcpServer::readLine(cliSocket);
         /*this->addLine(line, row);
         line = server_side::TcpServer::readLine(cliSocket);
@@ -26,7 +25,7 @@ void MyClientHandler::handleClient(int cliSocket) {
     }
 
     MatrixSearchable<Point>* m = this->createMatrix(allInfo);
-  /*
+    /*
     // read the start point
     line = server_side::TcpServer::readLine(cliSocket);
     s = split(line, ',');
@@ -46,12 +45,19 @@ void MyClientHandler::handleClient(int cliSocket) {
     State<Point> *end1 = this->matrix[endP.getRow()][endP.getCol()];
 
     MatrixSearchable<Point>* m = new MatrixSearchable <Point>(this->matrix, start1, end1);*/
-    solution = this->solver->solve(m);
-    m->printMatrix();
-    server_side::TcpServer::writeToClient(cliSocket, solution.shortestPathRoute);
+    if (cache->findSolution(wholeProblem)) {
+        solution = cache->getSolution(wholeProblem);
+    } else {
+        searchResult = this->solver->solve(m);
+        solution = searchResult.shortestPathRoute;
+        cache->storeSolution(wholeProblem, solution);
+    }
+    server_side::TcpServer::writeToClient(cliSocket, solution);
     server_side::TcpServer::writeToClient(cliSocket, "\n");
-    cout<<solution.developedVerticels<<endl;
-    cout<<solution.shortestPathWeight<<endl;
+    //TODO
+    // delete the matrix doesn't work!
+    /*// delete the matrixSearchable
+    this->deleteMatrixSearchable(m);*/
 }
 
 MatrixSearchable<Point>* MyClientHandler::createMatrix(vector<string> allInfo) {
@@ -80,7 +86,6 @@ MatrixSearchable<Point>* MyClientHandler::createMatrix(vector<string> allInfo) {
     MatrixSearchable<Point>* m = new MatrixSearchable <Point>(this->matrix, start1, end1);
     return m;
 }
-
 
 void MyClientHandler::addLine(std::string line, int row) {
     vector<string> allNums = split(line, ',');
@@ -125,3 +130,24 @@ bool MyClientHandler::checkValidOfPoint(Point p) {
     return true;
 }
 
+void MyClientHandler::deleteMatrixSearchable(MatrixSearchable<Point>* m) {
+    unsigned long rowsNum, colsNum;
+    rowsNum = this->matrix.size();
+    colsNum = this->matrix[0].size();
+    // delete all the states in the matrix
+    for (int i = 0; i < rowsNum; i++) {
+        for (int j = 0; j < colsNum; i++) {
+            delete(this->matrix[i][j]);
+        }
+    }
+    // delete the matrix
+    delete(m);
+}
+
+CacheManager* MyClientHandler::getCache() {
+    return this->cache;
+}
+
+MyClientHandler::~MyClientHandler() {
+    delete cache;
+}

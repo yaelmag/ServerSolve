@@ -6,7 +6,7 @@
 #include <iostream>
 #include <sstream>
 #include "FileCacheManager.h"
-#define FILE_NAME "reverser.txt"
+#define FILE_NAME "cacheFile.txt"
 
 
 bool FileCacheManager::findSolution(string problem) {
@@ -41,15 +41,20 @@ void FileCacheManager::writeToFile(string fileName) {
 }
 
 void FileCacheManager::loadFromFile(std::string fileName) {
-    string line;
+    string line, solution, problem = "";
     std::ifstream file(fileName, std::ios::in);
     std::vector<string> splittedLine;
     if (file.is_open()) {
         while (getline(file, line)) {
-            splittedLine = split(line, '$');
-            string problem = splittedLine.at(0);
-            string solution = splittedLine.at(1);
-            this->generalCache.insert(std::pair<string, string>(problem, solution));
+            if (line.find('$') != std::string::npos) {
+                splittedLine = split(line, '$');
+                problem += splittedLine.at(0);
+                solution = splittedLine.at(1);
+                this->generalCache.insert(std::pair<string, string>(problem, solution));
+                problem = "";
+            } else {
+                problem += (line + "\n");
+            }
         }
         file.close();
     } else {

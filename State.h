@@ -31,8 +31,8 @@ Direction cameFrom;
 bool isMarked;
 
 public:
-    State(T state, double cost) : state(state), cost(cost), upState(nullptr), downState(nullptr),
-    leftState(nullptr), rightState(nullptr), cameFrom(NotSet), isMarked(false) {}
+    State(T state, double cost) : state(state), cost(cost), upState(NULL), downState(NULL),
+    leftState(NULL), rightState(NULL), cameFrom(NotSet), isMarked(false) {}
 
     //State(T state, double cost) : state(state), cost(cost), isMarked(false), cameFrom(nullptr){}
 

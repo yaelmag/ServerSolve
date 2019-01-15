@@ -102,9 +102,6 @@
 		<Unit filename="/home/adi/CLionProjects/project2/DFS.h">
 			<Option target="project2"/>
 		</Unit>
-		<Unit filename="/home/adi/CLionProjects/project2/EnumDirection.h">
-			<Option target="project2"/>
-		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/FileCacheManager.cpp">
 			<Option target="project2"/>
 		</Unit>

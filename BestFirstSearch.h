@@ -49,25 +49,25 @@ public:
 
 
             //upState
-            if (currentNode->getUpState() != nullptr && currentNode->getUpState()->getCameFrom() == NotSet) {
+            if (currentNode->getUpState() != NULL && currentNode->getUpState()->getCameFrom() == NotSet) {
                 currentNode->getUpState()->setCameFrom(Down);
                 pq.push(currentNode->getUpState());
 
             }
             //downState
-            if (currentNode->getDownState() != nullptr && currentNode->getDownState()->getCameFrom() == NotSet) {
+            if (currentNode->getDownState() != NULL && currentNode->getDownState()->getCameFrom() == NotSet) {
                 currentNode->getDownState()->setCameFrom(Up);
                 pq.push(currentNode->getDownState());
 
             }
             //leftState
-            if (currentNode->getLeftState() != nullptr && currentNode->getLeftState()->getCameFrom() == NotSet) {
+            if (currentNode->getLeftState() != NULL && currentNode->getLeftState()->getCameFrom() == NotSet) {
                 currentNode->getLeftState()->setCameFrom(Right);
                 pq.push(currentNode->getLeftState());
 
             }
             //rightState
-            if (currentNode->getRightState() != nullptr && currentNode->getRightState()->getCameFrom() == NotSet) {
+            if (currentNode->getRightState() != NULL && currentNode->getRightState()->getCameFrom() == NotSet) {
                 currentNode->getRightState()->setCameFrom(Left);
                 pq.push(currentNode->getRightState());
 

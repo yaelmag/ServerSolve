@@ -19,7 +19,7 @@ void server_side::MySerialServer::open(int port, ClientHandler* c) {
 void server_side::MySerialServer::start(int socketId, ClientHandler* c, bool *stopRunning) {
     int cliSockfd;
     int timeOutCount= 0;
-    //c->getCache()->loadAtStart();
+    c->getCache()->loadAtStart();
     while (!*(stopRunning)) {
         cliSockfd = TcpServer::acceptConnection(socketId);
         if (cliSockfd < 0) {
@@ -37,7 +37,7 @@ void server_side::MySerialServer::start(int socketId, ClientHandler* c, bool *st
         c->handleClient(cliSockfd);
         TcpServer::closeSocket(cliSockfd);
     }
-    //c->getCache()->storeAtTheEnd();
+    c->getCache()->storeAtTheEnd();
     TcpServer::closeSocket(socketId);
 }
 

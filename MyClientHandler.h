@@ -28,6 +28,9 @@ public:
     void addLine(std::string line, int row);
     vector<string> split(string info, char divide);
     bool checkValidOfPoint(Point p);
+    void deleteMatrixSearchable(MatrixSearchable<Point>* m);
+    virtual CacheManager* getCache() override;
+    virtual ~MyClientHandler() override;
 };
 
 

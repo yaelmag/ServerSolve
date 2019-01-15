@@ -41,25 +41,25 @@ public:
 
         currentState->setIsMarked(true);
 
-        if (currentState->getLeftState() != nullptr && recursiveSearch(currentState->getLeftState()))
+        if (currentState->getLeftState() != NULL && recursiveSearch(currentState->getLeftState()))
         {
             this->searchResult.shortestPathRoute.insert(0, "Left, ");
             return true;
         }
 
-        if (currentState->getUpState() != nullptr && recursiveSearch(currentState->getUpState()))
+        if (currentState->getUpState() != NULL && recursiveSearch(currentState->getUpState()))
         {
             this->searchResult.shortestPathRoute.insert(0, "Up, ");
             return true;
         }
 
-        if (currentState->getRightState() != nullptr && recursiveSearch(currentState->getRightState()))
+        if (currentState->getRightState() != NULL && recursiveSearch(currentState->getRightState()))
         {
             this->searchResult.shortestPathRoute.insert(0, "Right, ");
             return true;
         }
 
-        if (currentState->getDownState() != nullptr && recursiveSearch(currentState->getDownState()))
+        if (currentState->getDownState() != NULL && recursiveSearch(currentState->getDownState()))
         {
             this->searchResult.shortestPathRoute.insert(0, "Down, ");
             return true;
