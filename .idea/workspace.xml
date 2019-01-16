@@ -11,15 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b38b70-ec25-48cf-ab1c-2e98fc4b7b1b" name="Default Changelist" comment="">
+    <list default="true" id="f2b38b70-ec25-48cf-ab1c-2e98fc4b7b1b" name="Default Changelist" comment="update :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyClientHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MyClientHandler.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyParallelServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MyParallelServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyParallelServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/MyParallelServer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySerialServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MySerialServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TcpServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TcpServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TcpServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/TcpServer.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,19 +46,19 @@
         <counts>
           <entry key="cpp" value="151" />
           <entry key="h" value="240" />
-          <entry key="txt" value="49" />
+          <entry key="txt" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="4" />
           <entry key="ObjectiveC" value="391" />
-          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="PLAIN_TEXT" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="6095" />
+          <entry key="cpp" value="6105" />
           <entry key="h" value="7485" />
           <entry key="txt" value="71" />
         </counts>
@@ -73,7 +67,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="10" />
           <entry key="Doxygen file" value="43" />
-          <entry key="ObjectiveC" value="13537" />
+          <entry key="ObjectiveC" value="13547" />
           <entry key="PLAIN_TEXT" value="61" />
         </counts>
       </usages-collector>
@@ -84,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+            <state relative-caret-position="235">
+              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
               <folding>
                 <element signature="e#38#57#0" expanded="true" />
               </folding>
@@ -96,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TcpServer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+            <state relative-caret-position="15">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding>
                 <element signature="e#115#924#0" />
               </folding>
@@ -108,14 +102,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyParallelServer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            <state relative-caret-position="85">
+              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding>
                 <element signature="e#38#67#0" expanded="true" />
                 <element signature="e#147#344#0" />
-                <element signature="e#346#998#0" />
                 <element signature="e#1000#1233#0" />
-                <element signature="e#1235#1454#0" />
               </folding>
             </state>
           </provider>
@@ -278,7 +270,7 @@
       <workItem from="1547469642457" duration="27171000" />
       <workItem from="1547565871259" duration="9438000" />
       <workItem from="1547582953242" duration="5220000" />
-      <workItem from="1547591047726" duration="11841000" />
+      <workItem from="1547591047726" duration="13974000" />
     </task>
     <task id="LOCAL-00001" summary="hi there">
       <created>1546893535385</created>
@@ -448,11 +440,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547601775847</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update :)">
+      <created>1547607975169</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1547607975169</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182390000" />
+    <option name="totallyTimeSpent" value="184523000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -467,18 +466,18 @@
     <frame x="64" y="-11" width="1409" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20132256" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20205732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.330033" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.330033" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49963263" weight="0.32838285" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" sideWeight="0.49963263" visible="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003674" side_tool="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32838285" />
@@ -703,18 +702,8 @@
     <entry file="file://$PROJECT_DIR$/dfs_size_weight.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dfs_size_developed.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/bfs_size_weight.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bfs_size_developed.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DFS.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -736,16 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/best_size_developed.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Astar_size_developed.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -845,10 +824,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Astar_size_developed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfs_size_developed.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/best_size_developed.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bfs_size_developed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        <state relative-caret-position="235">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding>
             <element signature="e#38#57#0" expanded="true" />
           </folding>
@@ -857,8 +856,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TcpServer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        <state relative-caret-position="15">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding>
             <element signature="e#115#924#0" />
           </folding>
@@ -867,14 +866,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyParallelServer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        <state relative-caret-position="85">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
             <element signature="e#38#67#0" expanded="true" />
             <element signature="e#147#344#0" />
-            <element signature="e#346#998#0" />
             <element signature="e#1000#1233#0" />
-            <element signature="e#1235#1454#0" />
           </folding>
         </state>
       </provider>

@@ -5,7 +5,7 @@
 #include "MyParallelServer.h"
 #include "TcpServer.h"
 
-server_side::MyParallelServer::MyParallelServer() {}
+server_side::MyParallelServer::MyParallelServer() = default;
 
 void server_side::MyParallelServer::open(int port, ClientHandler *c) {
     this->serverSock = TcpServer::openSocket(port);
@@ -22,7 +22,6 @@ void server_side::MyParallelServer::start(int serverSocket, ClientHandler *c) {
         afterFirstConnection = true;
         if (cliSockfd < 0) {
             if (errno == EWOULDBLOCK) {
-                std::cout << "timeout!" << std::endl;
                 stillRun = false;
                 continue;
             } else {
