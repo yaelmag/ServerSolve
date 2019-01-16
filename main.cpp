@@ -2,7 +2,7 @@
 #include "FilesGenerator.h"
 
 int main(int argc, char* argv[]) {
-    /*int port;
+    int port;
     if (argc != 2) {
         std::cout << "invalid number arguments to main";
         return 1;
@@ -13,8 +13,8 @@ int main(int argc, char* argv[]) {
         std::cout << "atoi error";
         return 1;
     }
-    boot::Main().main(port);*/
-    auto * f = new FilesGenerator();
-    f->generateFiles();
+    boot::Main().main(port);
+    /*auto * f = new FilesGenerator();
+    f->generateFiles();*/
     return 0;
 }
