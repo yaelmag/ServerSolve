@@ -14,7 +14,5 @@ int main(int argc, char* argv[]) {
         return 1;
     }
     boot::Main().main(port);
-    /*auto * f = new FilesGenerator();
-    f->generateFiles();*/
     return 0;
 }
