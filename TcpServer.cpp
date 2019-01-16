@@ -34,24 +34,21 @@ namespace server_side {
         return serverSockfd;
     }
 
-    int server_side::TcpServer::acceptConnection(int socketId) {
-        bool afterFirstConnection = false;
+    int server_side::TcpServer::acceptConnection(bool afterFirstConnection, int socketId) {
         int clilen, cliSockfd;
         struct sockaddr_in cli_addr;
         clilen = sizeof(cli_addr);
-
         if (afterFirstConnection) {
             //set accept timeout
             timeval timeout;
             // Timeout in seconds
-            timeout.tv_sec = 10;
+            timeout.tv_sec = 1;
             timeout.tv_usec = 0;
-            //std::cout<<"before 30"<<std::endl;
+
             setsockopt(socketId, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
         }
         /* Accept actual connection from the client */
         cliSockfd = accept(socketId, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
-        afterFirstConnection = true;
         return cliSockfd;
     }
 
@@ -67,7 +64,6 @@ namespace server_side {
         // If connection is established then start communicating *//*
         bzero(buffer, (BUFFER_SIZE));
         n = read(cliSock, &c, 1);
-        // n = read(cliSock, buffer, (BUFFER_SIZE - 1));
         while (c != '\n') {
             if (n < 0) {
                 if (errno == EWOULDBLOCK) {

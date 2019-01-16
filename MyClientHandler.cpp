@@ -168,4 +168,4 @@ CacheManager* MyClientHandler::getCache() {
 /**
  * destructor
  */
-MyClientHandler::~MyClientHandler() {}
+MyClientHandler::~MyClientHandler() = default;

@@ -19,7 +19,7 @@ namespace server_side {
     class TcpServer {
     public:
         static int openSocket(int port);
-        static int acceptConnection(int socketId);
+        static int acceptConnection(bool afterFirstConnection, int socketId);
         static void closeSocket(int socketId);
         static std::string readLine(int cliSock);
         static void writeToClient(int cliSock, std::string message);

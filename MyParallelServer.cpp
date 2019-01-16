@@ -5,31 +5,35 @@
 #include "MyParallelServer.h"
 #include "TcpServer.h"
 
-server_side::MyParallelServer::MyParallelServer() {
-    this->stopRunning = new bool;
-    *(this->stopRunning) = false;
-    this->threadVec = new std::vector<std::thread>;
-}
+server_side::MyParallelServer::MyParallelServer() {}
 
 void server_side::MyParallelServer::open(int port, ClientHandler *c) {
-    int socketId = TcpServer::openSocket(port);
-    listen(socketId, SOMAXCONN);
-    this->generalThread = std::thread(&start, socketId, c, stopRunning, this->threadVec);
+    this->serverSock = TcpServer::openSocket(port);
+    listen(this->serverSock, SOMAXCONN);
+    start(this->serverSock, c);
 }
 
-void server_side::MyParallelServer::start(int serverSocket, ClientHandler* c,bool *stopRunning, std::vector<std::thread>* threadVec) {
+void server_side::MyParallelServer::start(int serverSocket, ClientHandler *c) {
+    bool stillRun = true;
     int cliSockfd;
-    //int timeOutCount = 0;
-    while (!*(stopRunning)) {
-        cliSockfd = TcpServer::acceptConnection(serverSocket);
+    bool afterFirstConnection = false;
+    while (stillRun) {
+        cliSockfd = TcpServer::acceptConnection(afterFirstConnection, serverSocket);
+        afterFirstConnection = true;
         if (cliSockfd < 0) {
-            continue;
+            if (errno == EWOULDBLOCK) {
+                std::cout << "timeout!" << std::endl;
+                stillRun = false;
+                continue;
+            } else {
+                continue;
+            }
         }
-        threadVec->push_back(std::thread(&openThreadForClient, cliSockfd, c));
+        threadVec.push_back(new std::thread(&openThreadForClient, cliSockfd, c));
     }
 }
 
-void server_side::MyParallelServer::openThreadForClient(int cliSocket, ClientHandler* c) {
+void server_side::MyParallelServer::openThreadForClient(int cliSocket, ClientHandler *c) {
     c->getCache()->loadAtStart();
     c->handleClient(cliSocket);
     c->getCache()->storeAtTheEnd();
@@ -37,12 +41,9 @@ void server_side::MyParallelServer::openThreadForClient(int cliSocket, ClientHan
 }
 
 void server_side::MyParallelServer::stop() {
-    *(this->stopRunning) = true;
-    this->generalThread.join();
-    for (std::vector<std::thread>::iterator it = this->threadVec->begin(); it != this->threadVec->end(); it++) {
-        it->join();
+    for (std::vector<std::thread *>::iterator it = this->threadVec.begin(); it != this->threadVec.end(); it++) {
+        (*(it))->join();
+        delete(*it);
     }
-
-    delete this->stopRunning;
-    delete this->threadVec;
+    close(this->serverSock);
 }

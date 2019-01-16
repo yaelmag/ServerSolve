@@ -12,16 +12,14 @@
 using namespace std;
 namespace server_side {
     class MyParallelServer : public Server {
-        bool* stopRunning;
-        std::thread generalThread;
-        std::vector<std::thread> * threadVec;
+        int serverSock;
+        std::vector<std::thread*> threadVec;
     public:
         MyParallelServer();
         void open(int port, ClientHandler *c) override;
-        static void start(int socketId, ClientHandler* c, bool* stopRunning, std::vector<std::thread>* threadVec);
+        void start(int socketId, ClientHandler* c);
         static void openThreadForClient(int cliSocket, ClientHandler* c);
         void stop() override;
     };
 }
-
 #endif //PROJECT2_MYPARALLELSERVER_H

@@ -26,18 +26,16 @@ namespace boot {
     class Main {
     public:
         int main(int port) {
-            Solver<Searchable<Point>*, SearchResult> *solver = new SearcherSolver<Point>(new
-                    BFS<Point>());
+            Solver<Searchable<Point>*, SearchResult> *solver = new SearcherSolver<Point>(new AStar<Point>());
             CacheManager *cacheManager = new FileCacheManager();
-            ClientHandler *ClientHandler = new MyClientHandler(solver, cacheManager);
-            server_side::MyParallelServer* parallelServer = new server_side::MyParallelServer();
-            parallelServer->open(port, ClientHandler);
-            std::this_thread::sleep_for(std::chrono::milliseconds(10000));
-            parallelServer->stop();
+            ClientHandler *clientHandler = new MyClientHandler(solver, cacheManager);
+            server_side::MyParallelServer* myParallelServer = new server_side::MyParallelServer();
+            myParallelServer->open(port, clientHandler);
+            myParallelServer->stop();
             delete(solver);
             delete(cacheManager);
-            delete(ClientHandler);
-            delete(parallelServer);
+            delete(clientHandler);
+            delete(myParallelServer);
             return 0;
         }
     };

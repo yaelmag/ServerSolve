@@ -21,7 +21,7 @@ void server_side::MySerialServer::start(int socketId, ClientHandler* c, bool *st
     int timeOutCount= 0;
     c->getCache()->loadAtStart();
     while (!*(stopRunning)) {
-        cliSockfd = TcpServer::acceptConnection(socketId);
+        cliSockfd = TcpServer::acceptConnection(true, socketId);
         if (cliSockfd < 0) {
             if (errno == EWOULDBLOCK) {
                 std::cout << "timeout!" << std::endl;
