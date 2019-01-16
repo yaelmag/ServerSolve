@@ -29,7 +29,7 @@ State<T>* upState;
 State<T>* downState;
 State<T>* leftState;
 State<T>* rightState;
-double cost;
+int cost;
 Direction cameFrom;
 bool isMarked;
 
@@ -39,7 +39,7 @@ public:
      * @param state - the state
      * @param cost - the cost
      */
-    State(T state, double cost) : state(state), cost(cost), upState(NULL), downState(NULL),
+    State(T state, int cost) : state(state), cost(cost), upState(NULL), downState(NULL),
     leftState(NULL), rightState(NULL), cameFrom(NotSet), isMarked(false) {}
     /**
      * set the up state
@@ -94,7 +94,7 @@ public:
      * get the cost of the state
      * @return the cost of the state
      */
-    double getCost() const {
+    int getCost() const {
         return cost;
     }
     /**
@@ -187,9 +187,9 @@ struct SearchResult {
 
     std::string shortestPathRoute;
 
-    double shortestPathWeight;
+    int shortestPathWeight;
 
-    int developedVerticels;
+    int developedVertices;
 
 };
 

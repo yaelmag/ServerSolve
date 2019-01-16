@@ -18,7 +18,7 @@
 #include "BFS.h"
 #include "DFS.h"
 #include "BestFirstSearch.h"
-#include "Astar.h"
+#include "AStar.h"
 #include "MyParallelServer.h"
 
 
@@ -26,7 +26,8 @@ namespace boot {
     class Main {
     public:
         int main(int port) {
-            Solver<Searchable<Point>*, SearchResult> *solver = new SearcherSolver<Point>(new Astar<Point>());
+            Solver<Searchable<Point>*, SearchResult> *solver = new SearcherSolver<Point>(new
+                    BFS<Point>());
             CacheManager *cacheManager = new FileCacheManager();
             ClientHandler *ClientHandler = new MyClientHandler(solver, cacheManager);
             server_side::MyParallelServer* parallelServer = new server_side::MyParallelServer();

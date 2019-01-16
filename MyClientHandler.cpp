@@ -40,6 +40,7 @@ void MyClientHandler::handleClient(int cliSocket) {
 
     // delete the matrixSearchable
     this->deleteMatrixSearchable(m);
+    this->matrix.clear();
 }
 
 /**
@@ -84,11 +85,11 @@ MatrixSearchable<Point>* MyClientHandler::createMatrix(vector<string> allInfo) {
 void MyClientHandler::addLine(std::string line, int row) {
     vector<string> allNums = split(line, ',');
 
-    double cost;
+    int cost;
     vector<State<Point>*> allStates;
     // create the line - vector of states
     for (int i = 0; i < allNums.size(); i++) {
-        cost = stod(allNums[i]);
+        cost = stoi(allNums[i]);
         Point point = Point(row, i);
 
         auto *myState = new State<Point>(point, cost);

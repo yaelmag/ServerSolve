@@ -2,8 +2,8 @@
 // Created by adi on 13/01/19.
 //
 
-#ifndef PROJECT2_MATRIXSOLVER_H
-#define PROJECT2_MATRIXSOLVER_H
+#ifndef PROJECT2_SEARCHERSOLVER_H
+#define PROJECT2_SEARCHERSOLVER_H
 
 #include "Solver.h"
 #include "Searcher.h"
@@ -21,4 +21,4 @@ public:
     }
 };
 
-#endif //PROJECT2_MATRIXSOLVER_H
+#endif //PROJECT2_SEARCHERSOLVER_H

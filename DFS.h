@@ -14,7 +14,7 @@ class DFS : public Searcher <T> {
 public:
     SearchResult search(Searchable<T> *searchable) override {
         // initialize the search result
-        this->searchResult.developedVerticels = 0;
+        this->searchResult.developedVertices = 0;
         this->searchResult.shortestPathRoute = "";
         this->searchResult.shortestPathWeight = 0;
 
@@ -34,7 +34,7 @@ public:
 
         this->searchResult.shortestPathWeight += currentState->getCost();
 
-        searchResult.developedVerticels++;
+        searchResult.developedVertices++;
 
         //finished
         if (currentState == goalState) {

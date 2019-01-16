@@ -25,7 +25,7 @@ public:
         SearchResult searchResult;
 
         // initialize the search result
-        searchResult.developedVerticels = 0;
+        searchResult.developedVertices = 0;
         searchResult.shortestPathRoute = "";
         searchResult.shortestPathWeight = 0;
 
@@ -72,7 +72,7 @@ public:
                 pq.push(currentNode->getRightState());
 
             }
-            searchResult.developedVerticels++;
+            searchResult.developedVertices++;
         }
 
         //no path exists!

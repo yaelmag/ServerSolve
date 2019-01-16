@@ -16,7 +16,7 @@
 using namespace std;
 
 template<class T>
-class Astar : public Searcher<T> {
+class AStar : public Searcher<T> {
 public:
     // A Function to find the shortest path between
     // a given source cell to a destination cell according
@@ -24,7 +24,7 @@ public:
     SearchResult search(Searchable<T> *searchable) override {
         SearchResult searchResult;
         // initialize the search result
-        searchResult.developedVerticels = 0;
+        searchResult.developedVertices = 0;
         searchResult.shortestPathRoute = "";
         searchResult.shortestPathWeight = 0;
 
@@ -63,8 +63,6 @@ public:
             }
 
             for (State<T> *next : currentNode->getAllNeighbors()) {
-                //if (next->isInfinity)
-                //    continue;
                 double new_cost = costMap[currentNode] + next->getCost();
                 if (costMap.find(next) == costMap.end()
                     || new_cost < costMap[next]) {
@@ -72,7 +70,7 @@ public:
                     int priority = new_cost + heuristic(next, goalState);
                     priorityQueue.put(next, priority);
                     cameFromMap[next] = currentNode;
-                    searchResult.developedVerticels++;
+                    searchResult.developedVertices++;
                 }
             }
 

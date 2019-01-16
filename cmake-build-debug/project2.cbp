@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/adi/CLionProjects/project2/Astar.h">
+		<Unit filename="/home/adi/CLionProjects/project2/AStar.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/BFS.h">
@@ -106,6 +106,9 @@
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/FileCacheManager.h">
+			<Option target="project2"/>
+		</Unit>
+		<Unit filename="/home/adi/CLionProjects/project2/FilesGenerator.h">
 			<Option target="project2"/>
 		</Unit>
 		<Unit filename="/home/adi/CLionProjects/project2/Main.cpp">
