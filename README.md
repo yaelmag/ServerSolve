@@ -1,4 +1,4 @@
 # project2 - solving problems throw server
 
-client send problems to server and the server send back solutions (using cache).
-we tried several algorithms and compared their efficiency
+Create server which recives problems and send back solutions (while storing cache).
+We tried several algorithms and compared their efficiency.
